@@ -1,5 +1,7 @@
 <?php
-session_start(); // Ensure session starts at the top of the file
+session_start(); // Ensure session starts at the top
+
+require_once '../app/logger.php'; // Include logger functions
 
 // ✅ Redirect if not logged in
 if (!isset($_SESSION['user'])) {
@@ -8,26 +10,27 @@ if (!isset($_SESSION['user'])) {
     exit();
 }
 
-$user = $_SESSION['user'];
-$role = htmlspecialchars($user['role'] ?? 'Editor');
-$error = '';
-$success = '';
+// ✅ Retrieve user info safely
+$user = $_SESSION['user'] ?? [];
+$username = htmlspecialchars($user['username'] ?? 'User');
+$role = htmlspecialchars(ucfirst($user['role'] ?? 'Editor'));
 
-// Initialize variables to avoid undefined variable issues
+// Initialize variables
 $title = '';
 $slug = '';
 $status = 'draft';
 $content_html = '';
+$error = '';
+$success = '';
 
 // Handle form submission
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    // Capture and sanitize form inputs
     $title = trim($_POST['title'] ?? '');
     $slug = trim($_POST['slug'] ?? '');
     $status = $_POST['status'] ?? 'draft';
-    $content_html = $_POST['content_html'] ?? ''; // This is raw HTML, no escaping here
+    $content_html = $_POST['content_html'] ?? '';
 
-    // Escape title and slug for safety
+    // Escape title and slug
     $title = htmlspecialchars($title, ENT_QUOTES, 'UTF-8');
     $slug = htmlspecialchars($slug, ENT_QUOTES, 'UTF-8');
 
@@ -35,36 +38,42 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $error = "Title is required.";
     } else {
         if (empty($slug)) {
-            // Auto-generate slug from title if empty (ensure the generated slug is URL-safe)
             $slug = strtolower(trim(preg_replace('/[^A-Za-z0-9-]+/', '-', $title), '-'));
         }
 
         try {
-            // Insert page into the database, including content_html
+            // Insert page into the database
             $conn = new mysqli('localhost', 'root', '', 'chandusoft');
             if ($conn->connect_error) {
                 die("❌ DB connection failed: " . $conn->connect_error);
             }
 
             $stmt = $conn->prepare("INSERT INTO pages (title, slug, status, content_html, updated_at) VALUES (?, ?, ?, ?, NOW())");
-            $stmt->execute([$title, $slug, $status, $content_html]);
+            $stmt->bind_param("ssss", $title, $slug, $status, $content_html);
+            $stmt->execute();
 
-            // Success: Redirect to pages list
+            // ✅ Log page creation
+            log_page("🆕 Page created | Title: $title | Slug: $slug | Status: $status | By: $username");
+
+            $success = "Page created successfully.";
             header("Location: pages.php");
             exit();
-        } catch (PDOException $e) {
-            $error = "Database error: " . $e->getMessage(); // Show error during development only
+        } catch (Exception $e) {
+            $error = "Database error: " . $e->getMessage();
+            log_error("Page creation failed: " . $e->getMessage());
         }
     }
 }
 ?>
+
+
 
 <!DOCTYPE html>
 <html>
 <head>
     <title>Create Page</title>
     <style>
-        body {
+         body {
             font-family: Arial, sans-serif;
             background: #f4f4f4;
             margin: 0;
@@ -88,9 +97,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         }
 
         .navbar .links a:hover {
-            text-decoration: underline;
+            text-decoration: none;
         }
-
         .container {
             max-width: 800px;
             margin: 30px auto;
@@ -172,27 +180,30 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 </head>
 <body>
 
+ 
 <!-- ✅ Navbar -->
 <div class="navbar">
     <div><strong>Chandusoft Admin</strong></div>
-   <div class="links">
-        Welcome <?= htmlspecialchars($role) ?>!
-        <a href="../app/dashboard.php">Dashboard</a>
-        <a href="../admin/admin-leads.php">Leads</a>
-        <a href="../admin/pages.php">Pages</a>
-        <a href="../admin/logout.php">Logout</a>
+    <div class="links">
+        Welcome <?= $role ?>!
+        <a href="/app/dashboard.php">Dashboard</a>
+         <!-- Dynamic catalog link based on user role -->
+    <?php if ($role === 'Admin'): ?>
+        <a href="/admin/catalog.php">Admin Catalog</a>
+        <a href="/public/catalog.php">Public Catalog</a>
+    <?php elseif ($role === 'Editor'): ?>
+        <a href="/public/catalog.php">Public Catalog</a>
+    <?php endif; ?>
+        <a href="/admin/admin-leads.php">Leads</a>
+        <a href="/admin/pages.php">Pages</a>
+        <a href="/admin/logout.php">Logout</a>
+
     </div>
 </div>
 
 <!-- ✅ Page Form -->
 <div class="container">
     <h2>Create New Page</h2>
-
-    <?php if ($error): ?>
-        <div class="message error"><?= htmlspecialchars($error) ?></div>
-    <?php elseif ($success): ?>
-        <div class="message success"><?= htmlspecialchars($success) ?></div>
-    <?php endif; ?>
 
     <form method="POST">
         <label for="title">Page Title *</label>

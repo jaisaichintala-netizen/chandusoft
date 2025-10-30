@@ -162,7 +162,7 @@ $TURNSTILE_SITE = getenv('TURNSTILE_SITE') ?: '0x4AAAAAAB7ii-4RV0QMh131';
 
 <!-- ✅ Enquiry Form -->
 <h2>Enquire about this product</h2>
-<form id="enquiry-form" method="post" action="send-enquiry.php">
+<form id="enquiry-form" method="post" action="/public/send-enquiry.php">
     <input type="hidden" name="product" value="<?= htmlspecialchars($item['title']) ?>">
     <input type="text" name="name" placeholder=" Your name" required>
     <input type="email" name="email" placeholder=" Your email" required>

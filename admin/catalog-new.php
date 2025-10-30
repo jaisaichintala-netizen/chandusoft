@@ -1,7 +1,17 @@
 <?php
 require_once __DIR__ . '/../app/config.php';
-require_once __DIR__ . '/../app/logger.php'; // ✅ Central logger
- 
+require_once __DIR__ . '/../app/logger.php';
+
+
+// ✅ Start session first
+if (session_status() === PHP_SESSION_NONE) {
+    session_start();
+}
+
+// ✅ Retrieve user info safely
+$user = $_SESSION['user'] ?? [];
+$username = htmlspecialchars($user['username'] ?? 'User');
+$role = htmlspecialchars(ucfirst($user['role'] ?? 'Editor'));
 $message = '';
  
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
@@ -22,6 +32,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $slug = $originalSlug . '-' . $counter++;
     }
  
+    // ✅ Image upload
     $imagePath = '';
     if (isset($_FILES['image']) && $_FILES['image']['error'] !== UPLOAD_ERR_NO_FILE) {
         if ($_FILES['image']['error'] === UPLOAD_ERR_OK) {
@@ -51,6 +62,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         }
     }
  
+    // ✅ Database insert
     if (!$message) {
         $stmt = $pdo->prepare("
             INSERT INTO catalog (title, slug, price, image, short_desc, status, created_at, updated_at)
@@ -64,9 +76,125 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         header("Location: catalog.php");
         exit;
     } else {
-        log_catalog("❌ Catalog creation failed for '$title' — reason: $message", 'ERROR');
+        log_catalog("Catalog item added: '{$title}' by {$username}");
+
     }
 }
 ?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add Catalog - Admin</title>
+    <style>
+       body {
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar {
+            background-color: #2c3e50;
+            color: white;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .navbar .links a {
+            color: white;
+            text-decoration: none;
+            margin-left: 15px;
+            font-weight: bold;
+        }
+
+        .navbar .links a:hover {
+            text-decoration: none;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 30px auto;
+            background: #fff;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+        }
+        h1 { text-align: center; color: #007BFF; margin-bottom: 20px; }
+        form label { display: block; margin-bottom: 5px; font-weight: bold; }
+        form input[type="text"], form input[type="number"], form textarea, form select {
+            width: 100%; padding: 10px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 5px;
+        }
+        form input[type="file"] { margin-bottom: 15px; }
+        button {
+            background: #007BFF; color: #fff; padding: 10px 20px; border: none;
+            border-radius: 5px; cursor: pointer;
+        }
+        button:hover { background: #0056b3; }
+        .message { text-align: center; color: red; margin-bottom: 15px; }
+        .back-link {
+            display: inline-block; margin-bottom: 15px; text-decoration: none;
+            color: #007BFF; font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+ 
+<!-- ✅ Navbar -->
+<div class="navbar">
+    <div><strong>Chandusoft Admin</strong></div>
+    <div class="links">
+        Welcome <?= $role ?>!
+        <a href="/app/dashboard.php">Dashboard</a>
+         <!-- Dynamic catalog link based on user role -->
+    <?php if ($role === 'Admin'): ?>
+        <a href="/admin/catalog.php">Admin Catalog</a>
+        <a href="/public/catalog.php">Public Catalog</a>
+    <?php elseif ($role === 'Editor'): ?>
+        <a href="/public/catalog.php">Public Catalog</a>
+    <?php endif; ?>
+        <a href="/admin/admin-leads.php">Leads</a>
+        <a href="/admin/pages.php">Pages</a>
+        <a href="/admin/logout.php">Logout</a>
+
+    </div>
+</div>
+ 
+<div class="container">
+    <a href="catalog.php" class="back-link">← Back to Catalog</a>
+    <h1>Add New Catalog Item</h1>
+ 
+    <?php if ($message): ?>
+        <div class="message"><?= htmlspecialchars($message) ?></div>
+    <?php endif; ?>
+ 
+    <form method="post" enctype="multipart/form-data">
+        <label>Title</label>
+        <input type="text" name="title" required>
+ 
+        <label>Price</label>
+        <input type="number" step="0.01" name="price" required>
+ 
+        <label>Short Description</label>
+        <textarea name="short_desc" rows="4" required></textarea>
+ 
+        <label>Status</label>
+        <select name="status">
+            <option value="published">Published</option>
+            <option value="draft">Draft</option>
+            <option value="archived">Archived</option>
+        </select>
+ 
+        <label>Image</label>
+        <input type="file" name="image" accept="image/*">
+ 
+        <button type="submit">Save Catalog Item</button>
+    </form>
+</div>
+ 
+</body>
+</html>
  
  
