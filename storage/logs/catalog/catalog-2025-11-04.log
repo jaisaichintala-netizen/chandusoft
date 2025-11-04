@@ -1,0 +1,50 @@
+[2025-11-04 04:41:18][INFO] Viewed catalog item: Curd | IP: 127.0.0.1
+[2025-11-04 04:41:37][INFO] Viewed catalog item: TestA | IP: 127.0.0.1
+[2025-11-04 04:49:46][INFO] Viewed catalog item: TestA | IP: 127.0.0.1
+[2025-11-04 04:51:13][INFO] Viewed catalog item: TestA | IP: 127.0.0.1
+[2025-11-04 04:58:32][INFO] Viewed catalog item: TestA | IP: 127.0.0.1
+[2025-11-04 05:02:29][INFO] Viewed catalog item: TestA | IP: 127.0.0.1
+[2025-11-04 05:07:13][INFO] Viewed catalog item: TestA | IP: 127.0.0.1
+[2025-11-04 05:07:35][INFO] Viewed catalog item: M | IP: 127.0.0.1
+[2025-11-04 05:07:48][INFO] Viewed catalog item: M | IP: 127.0.0.1
+[2025-11-04 05:07:51][INFO] Viewed catalog item: Milk | IP: 127.0.0.1
+[2025-11-04 06:05:56][INFO] Catalog viewed | Page: 1 | Status: published | Search: '' | IP: 127.0.0.1
+[2025-11-04 06:06:10][INFO] Viewed catalog item: log | IP: 127.0.0.1
+[2025-11-04 06:06:23][INFO] New enquiry for log from alfalf@gmail.com | IP: 127.0.0.1
+[2025-11-04 06:18:38][INFO] Payment canceled for order 12 | IP: 127.0.0.1
+[2025-11-04 06:21:59][INFO] Viewed catalog item: test 1 | IP: 127.0.0.1
+[2025-11-04 09:54:11][INFO] Viewed catalog item: log | IP: 127.0.0.1
+[2025-11-04 10:03:43][INFO] Viewed catalog item: tech 1 | IP: 127.0.0.1
+[2025-11-04 10:03:56][INFO] Viewed catalog item: log | IP: 127.0.0.1
+[2025-11-04 10:04:00][INFO] Viewed catalog item: log | IP: 127.0.0.1
+[2025-11-04 10:05:19][INFO] 📸 Image uploaded for 'Hero' — file: uploads/catalog_1762250719.webp | IP: 127.0.0.1
+[2025-11-04 10:05:19][CREATE] 🆕 Created catalog item #9 — title: 'Hero', price: 1974.21, status: 'published' | IP: 127.0.0.1
+[2025-11-04 10:05:19][INFO] Catalog viewed | Page: 1 | Status: published | Search: '' | IP: 127.0.0.1
+[2025-11-04 10:05:46][INFO] 🖼️ Image updated for item #8 — file: uploads/catalog_1762250746.png | IP: 127.0.0.1
+[2025-11-04 10:05:46][INFO] ✏️ Edited catalog item #8 — title: 'log', price: 1523.99, status: 'published' | IP: 127.0.0.1
+[2025-11-04 10:05:46][INFO] Catalog viewed | Page: 1 | Status: published | Search: '' | IP: 127.0.0.1
+[2025-11-04 10:05:55][INFO] 🖼️ Image updated for item #5 — file: uploads/catalog_1762250755.png | IP: 127.0.0.1
+[2025-11-04 10:05:55][INFO] ✏️ Edited catalog item #5 — title: 'curd', price: 110.45, status: 'published' | IP: 127.0.0.1
+[2025-11-04 10:05:55][INFO] Catalog viewed | Page: 1 | Status: published | Search: '' | IP: 127.0.0.1
+[2025-11-04 10:06:09][INFO] 🖼️ Image updated for item #7 — file: uploads/catalog_1762250769.jpg | IP: 127.0.0.1
+[2025-11-04 10:06:09][INFO] ✏️ Edited catalog item #7 — title: 'tech 1', price: 24.58, status: 'published' | IP: 127.0.0.1
+[2025-11-04 10:06:09][INFO] Catalog viewed | Page: 1 | Status: published | Search: '' | IP: 127.0.0.1
+[2025-11-04 10:06:26][INFO] 🖼️ Image updated for item #6 — file: uploads/catalog_1762250786.jpg | IP: 127.0.0.1
+[2025-11-04 10:06:26][INFO] ✏️ Edited catalog item #6 — title: 'honey', price: 55.95, status: 'published' | IP: 127.0.0.1
+[2025-11-04 10:06:26][INFO] Catalog viewed | Page: 1 | Status: published | Search: '' | IP: 127.0.0.1
+[2025-11-04 10:06:37][INFO] 🖼️ Image updated for item #4 — file: uploads/catalog_1762250797.png | IP: 127.0.0.1
+[2025-11-04 10:06:37][INFO] ✏️ Edited catalog item #4 — title: 'test 1', price: 125.35, status: 'published' | IP: 127.0.0.1
+[2025-11-04 10:06:37][INFO] Catalog viewed | Page: 1 | Status: published | Search: '' | IP: 127.0.0.1
+[2025-11-04 10:06:47][INFO] 🖼️ Image updated for item #3 — file: uploads/catalog_1762250807.jpg | IP: 127.0.0.1
+[2025-11-04 10:06:47][INFO] ✏️ Edited catalog item #3 — title: 'sample', price: 58.92, status: 'published' | IP: 127.0.0.1
+[2025-11-04 10:06:47][INFO] Catalog viewed | Page: 1 | Status: published | Search: '' | IP: 127.0.0.1
+[2025-11-04 10:06:56][INFO] 🖼️ Image updated for item #2 — file: uploads/catalog_1762250816.webp | IP: 127.0.0.1
+[2025-11-04 10:06:56][INFO] ✏️ Edited catalog item #2 — title: 'Tech', price: 1253.6, status: 'published' | IP: 127.0.0.1
+[2025-11-04 10:06:57][INFO] Catalog viewed | Page: 1 | Status: published | Search: '' | IP: 127.0.0.1
+[2025-11-04 10:07:36][INFO] 🖼️ Image updated for item #1 — file: uploads/catalog_1762250856.jpg | IP: 127.0.0.1
+[2025-11-04 10:07:36][INFO] ✏️ Edited catalog item #1 — title: 'test', price: 150, status: 'published' | IP: 127.0.0.1
+[2025-11-04 10:07:37][INFO] Catalog viewed | Page: 1 | Status: published | Search: '' | IP: 127.0.0.1
+[2025-11-04 10:10:52][INFO] Catalog viewed | Page: 1 | Status: published | Search: '' | IP: 127.0.0.1
+[2025-11-04 10:11:18][INFO] Catalog viewed | Page: 1 | Status: published | Search: '' | IP: 127.0.0.1
+[2025-11-04 10:11:19][INFO] Catalog viewed | Page: 1 | Status: published | Search: '' | IP: 127.0.0.1
+[2025-11-04 10:11:21][INFO] Catalog viewed | Page: 1 | Status: published | Search: '' | IP: 127.0.0.1
