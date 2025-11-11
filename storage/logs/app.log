@@ -1353,3 +1353,28 @@
 [2025-11-10 17:07:21][INFO] ✅ Stripe webhook initialized | IP: ::1 | IP: ::1
 [2025-11-10 17:07:21][INFO] 🌐 Webhook triggered from host: http://overfearfully-prius-ulises.ngrok-free.dev | IP: ::1
 [2025-11-10 17:07:21][INFO] ⚠️ Empty webhook payload received | Method: GET | IP: ::1
+[2025-11-11 14:36:54][INFO] ✅ Stripe webhook initialized | IP: ::1 | IP: ::1
+[2025-11-11 14:36:54][INFO] 🌐 Webhook triggered from host: http://overfearfully-prius-ulises.ngrok-free.dev | IP: ::1
+[2025-11-11 14:36:54][INFO] ⚠️ Empty webhook payload received | Method: GET | IP: ::1
+[2025-11-11 14:43:39][ERROR] Failed to count catalog records: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''\'' at line 1 | IP: 127.0.0.1
+[2025-11-11 14:43:39][ERROR] Failed to fetch catalog records: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''\' ORDER BY created_at DESC LIMIT 0, 10' at line 1 | IP: 127.0.0.1
+[2025-11-11 14:43:51][ERROR] Failed to count catalog records: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''\'' at line 1 | IP: 127.0.0.1
+[2025-11-11 14:43:51][ERROR] Failed to fetch catalog records: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''\' ORDER BY created_at DESC LIMIT 0, 10' at line 1 | IP: 127.0.0.1
+[2025-11-11 14:44:46][ERROR] Failed to count catalog records: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''\'' at line 1 | IP: 127.0.0.1
+[2025-11-11 14:44:46][ERROR] Failed to fetch catalog records: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''\' ORDER BY created_at DESC LIMIT 0, 10' at line 1 | IP: 127.0.0.1
+[2025-11-11 14:58:48][INFO] ✅ Stripe webhook initialized | IP: ::1 | IP: ::1
+[2025-11-11 14:58:48][INFO] 🌐 Webhook triggered from host: http://overfearfully-prius-ulises.ngrok-free.dev | IP: ::1
+[2025-11-11 14:58:48][INFO] ✅ Stripe webhook initialized | IP: ::1 | IP: ::1
+[2025-11-11 14:58:48][INFO] 🌐 Webhook triggered from host: http://overfearfully-prius-ulises.ngrok-free.dev | IP: ::1
+[2025-11-11 14:58:51][INFO] ✅ Stripe signature verified successfully | IP: ::1
+[2025-11-11 14:58:51][INFO] ✅ Stripe signature verified successfully | IP: ::1
+[2025-11-11 14:58:51][INFO] 🔔 Stripe Event Received: payment_intent.canceled | IP: ::1
+
+[2025-11-11 14:58:51][INFO] ℹ️ Unhandled event type: payment_intent.canceled | IP: ::1
+
+[2025-11-11 14:58:51][INFO] ✅ Webhook processed successfully — Event: checkout.session.expired | IP: ::1
+[2025-11-11 14:58:51][INFO] ✅ Webhook processed successfully — Event: payment_intent.canceled | IP: ::1
+[2025-11-11 15:03:38][ERROR] Failed to count catalog records: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''\'' at line 1 | IP: 127.0.0.1
+[2025-11-11 15:03:38][ERROR] Failed to fetch catalog records: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''\' ORDER BY created_at DESC LIMIT 0, 10' at line 1 | IP: 127.0.0.1
+[2025-11-11 15:08:22][ERROR] Failed to count catalog records: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''\'' at line 1 | IP: 127.0.0.1
+[2025-11-11 15:08:22][ERROR] Failed to fetch catalog records: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''\' ORDER BY created_at DESC LIMIT 0, 10' at line 1 | IP: 127.0.0.1

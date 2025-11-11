@@ -27,30 +27,53 @@ $publishedCount = $conn->query("SELECT COUNT(*) as count FROM pages WHERE status
 $draftCount = $conn->query("SELECT COUNT(*) as count FROM pages WHERE status = 'draft'")->fetch_assoc()['count'];
 $archivedCount = $conn->query("SELECT COUNT(*) as count FROM pages WHERE status = 'archived'")->fetch_assoc()['count'];
 $allCount = $conn->query("SELECT COUNT(*) as count FROM pages")->fetch_assoc()['count'];
-
 // ✅ Search logic
 $search = $_GET['search'] ?? '';
 $search = trim($search);
 
 // Determine if there's a filter by status
 $status = $_GET['status'] ?? '';
-$whereClause = '';
-if ($status) {
-    $whereClause = "WHERE status = '" . $conn->real_escape_string($status) . "'";
+$whereParts = [];
+$params = [];
+$paramTypes = '';
+
+// If there's a status filter
+if (!empty($status)) {
+    $whereParts[] = "status = ?";
+    $params[] = $status;
+    $paramTypes .= 's';
 }
 
+// If there's a search term
 if ($search !== '') {
-    // Search by title or slug
-    $stmt = $conn->prepare("SELECT * FROM pages $whereClause AND (title LIKE ? OR slug LIKE ?) ORDER BY updated_at DESC");
-    $likeSearch = "%$search%";
-    $stmt->bind_param("ss", $likeSearch, $likeSearch);
-    $stmt->execute();
-    $pages = $stmt->get_result();
-    $stmt->close();
-} else {
-    // No search, show all
-    $pages = $conn->query("SELECT * FROM pages $whereClause ORDER BY updated_at DESC");
+    // Escape % and _ so they are treated literally
+    $escapedSearch = str_replace(['%', '_'], ['\\%', '\\_'], $search);
+    $likeSearch = "%$escapedSearch%";
+
+    $whereParts[] = "(title LIKE ? ESCAPE '\\\\' OR slug LIKE ? ESCAPE '\\\\')";
+    $params[] = $likeSearch;
+    $params[] = $likeSearch;
+    $paramTypes .= 'ss';
 }
+
+// Build WHERE clause safely
+$whereClause = '';
+if (!empty($whereParts)) {
+    $whereClause = 'WHERE ' . implode(' AND ', $whereParts);
+}
+
+// Prepare final SQL
+$sql = "SELECT * FROM pages $whereClause ORDER BY updated_at DESC";
+$stmt = $conn->prepare($sql);
+
+// Bind only if we have parameters
+if (!empty($params)) {
+    $stmt->bind_param($paramTypes, ...$params);
+}
+
+$stmt->execute();
+$pages = $stmt->get_result();
+$stmt->close();
 ?>
 
 <!DOCTYPE html>
@@ -283,6 +306,7 @@ if ($search !== '') {
         </div>
     </div>
 
+   <?php if ($pages->num_rows > 0): ?>
     <table>
         <tr>
             <th>Title</th>
@@ -293,20 +317,29 @@ if ($search !== '') {
         </tr>
 
         <?php while ($page = $pages->fetch_assoc()): ?>
-<tr>
-    <td><?= htmlspecialchars($page['title']) ?></td>
-    <td><?= htmlspecialchars($page['slug']) ?></td>
-    <td><?= ucfirst($page['status']) ?></td>
-    <td><?= htmlspecialchars($page['updated_at']) ?></td>
-    <td class="actions">
-        <!-- Edit button -->
-        <a href="edit.php?id=<?= $page['id'] ?>" class="btn btn-edit">Edit</a>
-
-        <!-- Admin-only buttons -->
-        <?php if (strtolower($role) === 'admin'): ?>
-            <a href="archive.php?id=<?= $page['id'] ?>" class="btn btn-archive">Archive</a>
-            <a href="delete.php?id=<?= $page['id'] ?>" class="btn btn-delete" onclick="return confirm('Are you sure you want to delete this page?')">Delete</a>
+        <tr>
+            <td><?= htmlspecialchars($page['title']) ?></td>
+            <td><?= htmlspecialchars($page['slug']) ?></td>
+            <td><?= ucfirst($page['status']) ?></td>
+            <td><?= htmlspecialchars($page['updated_at']) ?></td>
+            <td class="actions">
+                <a href="edit.php?id=<?= $page['id'] ?>" class="btn btn-edit">Edit</a>
+                <?php if (strtolower($role) === 'admin'): ?>
+                    <a href="archive.php?id=<?= $page['id'] ?>" class="btn btn-archive">Archive</a>
+                    <a href="delete.php?id=<?= $page['id'] ?>" class="btn btn-delete" onclick="return confirm('Are you sure you want to delete this page?')">Delete</a>
+                <?php endif; ?>
+            </td>
+        </tr>
+        <?php endwhile; ?>
+    </table>
+<?php else: ?>
+    <p style="text-align:center; color:#888; font-size:16px; margin-top:20px;">
+        <?php if ($search !== ''): ?>
+            No results found for "<strong><?= htmlspecialchars($search) ?></strong>".
+        <?php elseif ($status !== ''): ?>
+            No pages found with status "<strong><?= htmlspecialchars($status) ?></strong>".
+        <?php else: ?>
+            No pages available.
         <?php endif; ?>
-    </td>
-</tr>
-<?php endwhile; ?>
+    </p>
+<?php endif; ?>

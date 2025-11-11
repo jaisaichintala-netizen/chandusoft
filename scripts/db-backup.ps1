@@ -1,75 +1,70 @@
-# === CONFIG ===
+# ============================================================
+# Chandusoft – Database Backup and Restore to Test DB
+# Works with MySQL 8.4.3 (Laragon) / PowerShell-safe
+# ============================================================
 
+# --- CONFIG ---
 $DBHost = "localhost"
 $DBName = "chandusoft"
 $DBUser = "root"
-$DBPass = ""   # leave empty if not needed
-$TestDBName = "chandusoft_test"   # ✅ Backup test DB name
+$DBPass = ""          # Leave empty if no password
+$TestDBName = "chandusoft_test"
 
-# === PATH SETUP ===
-
+# --- PATH SETUP ---
 $BackupDir = Join-Path (Split-Path $PSScriptRoot -Parent) "storage\backups"
 $Timestamp = Get-Date -Format "yyyyMMdd_HHmmss"
-$FileName = "db-$Timestamp.sql"
-$FullPath = Join-Path $BackupDir $FileName
+$FileName  = "db-$Timestamp.sql"
+$FullPath  = Join-Path $BackupDir $FileName
 
-# === CREATE BACKUP DIRECTORY ===
-
+# --- CREATE BACKUP DIRECTORY ---
 if (!(Test-Path $BackupDir)) {
     New-Item -ItemType Directory -Path $BackupDir | Out-Null
 }
 
 Write-Host "Backing up database '$DBName' to $FullPath ..."
 
-# === RUN BACKUP (Avoid PowerShell > redirection — use cmd instead) ===
+# --- BACKUP (uses --result-file, avoids redirection) ---
+if ($DBPass -ne "") {
+    & mysqldump -h $DBHost -u $DBUser -p$DBPass $DBName --result-file="$FullPath"
+} else {
+    & mysqldump -h $DBHost -u $DBUser $DBName --result-file="$FullPath"
+}
+
+# --- VERIFY BACKUP ---
+if ((Test-Path $FullPath) -and ((Get-Item $FullPath).Length -gt 0)) {
+    Write-Host "Backup completed successfully."
+    Write-Host "File saved to: $FullPath"
+} else {
+    Write-Host "Backup failed or file is empty!"
+    exit
+}
+
+# --- RESTORE TO TEST DATABASE ---
+Write-Host ""
+Write-Host "Restoring into test database '$TestDBName' ..."
+
+$DropCreateSQL = "DROP DATABASE IF EXISTS $TestDBName; CREATE DATABASE $TestDBName;"
 
 if ($DBPass -ne "") {
-    $backupCmd = "mysqldump -h $DBHost -u $DBUser -p$DBPass $DBName > `"$FullPath`""
+    & mysql -h $DBHost -u $DBUser -p$DBPass -e "$DropCreateSQL"
+    & mysql -h $DBHost -u $DBUser -p$DBPass $TestDBName -e "SOURCE $FullPath"
 } else {
-    $backupCmd = "mysqldump -h $DBHost -u $DBUser $DBName > `"$FullPath`""
+    & mysql -h $DBHost -u $DBUser -e "$DropCreateSQL"
+    & mysql -h $DBHost -u $DBUser $TestDBName -e "SOURCE $FullPath"
 }
 
-cmd /c $backupCmd
+Write-Host "Test database '$TestDBName' restored successfully."
 
-# === VERIFY RESULT ===
+# --- VERIFY ROW COUNTS ---
+Write-Host ""
+Write-Host "Verifying restored tables..."
 
-if (Test-Path $FullPath) {
-    if ((Get-Item $FullPath).Length -gt 0) {
-        Write-Host "✅ Backup completed successfully!"
-        Write-Host "File saved to: $FullPath"
-
-        # === RESTORE TO TEST DATABASE ===
-        Write-Host "`n🔄 Restoring to test database '$TestDBName'..."
-
-        $dropCreateSQL = @"
-DROP DATABASE IF EXISTS $TestDBName;
-CREATE DATABASE $TestDBName;
-"@   # No spaces or indentation before the closing @" and the "@" at the end.
-
-        $dropCreateCmd = if ($DBPass -ne "") {
-            "mysql -h $DBHost -u $DBUser -p$DBPass -e `"$dropCreateSQL`""
-        } else {
-            "mysql -h $DBHost -u $DBUser -e `"$dropCreateSQL`""
-        }
-
-        Invoke-Expression $dropCreateCmd
-
-        # === IMPORT BACKUP INTO TEST DB ===
-        if ($DBPass -ne "") {
-            $importCmd = "mysql -h $DBHost -u $DBUser -p$DBPass $TestDBName < `"$FullPath`""
-        } else {
-            $importCmd = "mysql -h $DBHost -u $DBUser $TestDBName < `"$FullPath`""
-        }
-
-        # Use cmd /c to allow < redirection to work
-        cmd /c $importCmd
-
-        Write-Host "✅ Test database '$TestDBName' is now synchronized."
-    } else {
-        Write-Host "❌ Backup file is empty!"
-        Remove-Item $FullPath -ErrorAction SilentlyContinue
-    }
+# Adjust table names to your actual schema
+if ($DBPass -ne "") {
+    & mysql -h $DBHost -u $DBUser -p$DBPass -D $TestDBName -e "SELECT 'catalog count:' AS info, COUNT(*) FROM catalog; SELECT 'orders count:' AS info, COUNT(*) FROM orders;"
 } else {
-    Write-Host "❌ Backup failed or file does not exist!"
-    Remove-Item $FullPath -ErrorAction SilentlyContinue
+    & mysql -h $DBHost -u $DBUser -D $TestDBName -e "SELECT 'catalog count:' AS info, COUNT(*) FROM catalog; SELECT 'orders count:' AS info, COUNT(*) FROM orders;"
 }
+
+Write-Host ""
+Write-Host "Done. Backup and restore completed successfully."

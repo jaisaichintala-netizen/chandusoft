@@ -2,7 +2,7 @@
 session_start();
 
 // Simple admin password protection
-define('ADMIN_PASSWORD', 'musthafa');
+define('ADMIN_PASSWORD', 'jaisai');
 
 // Handle logout
 if (isset($_GET['logout'])) {
@@ -28,7 +28,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 // Redirect to login form if not logged in
 if (!isset($_SESSION['user'])) {
-    // Show simple login form and exit
     ?>
     <!DOCTYPE html>
     <html>
@@ -58,7 +57,9 @@ if (!isset($_SESSION['user'])) {
     exit;
 }
 
+// ================================
 // If logged in, continue to show leads page
+// ================================
 
 // Database connection
 $host = 'localhost';
@@ -76,24 +77,33 @@ $search = $_GET['search'] ?? '';
 $search = trim($search);
 
 if ($search !== '') {
-    // Modified query to fetch the leads in ascending order for storage and display latest first (DESC).
-    $stmt = $conn->prepare("SELECT * FROM leads WHERE id LIKE ? OR name LIKE ? OR email LIKE ? OR message LIKE ? ORDER BY id DESC");
-    $likeSearch = "%$search%";
+    // Escape % and _ so they are treated literally
+    $escapedSearch = str_replace(['%', '_'], ['\\%', '\\_'], $search);
+
+    // Prepare SQL safely with ESCAPE clause
+    $sql = "
+        SELECT * FROM leads 
+        WHERE id LIKE ? ESCAPE '\\\\'
+           OR name LIKE ? ESCAPE '\\\\'
+           OR email LIKE ? ESCAPE '\\\\'
+           OR message LIKE ? ESCAPE '\\\\'
+        ORDER BY id DESC
+    ";
+
+    $stmt = $conn->prepare($sql);
+    $likeSearch = "%$escapedSearch%";
     $stmt->bind_param("ssss", $likeSearch, $likeSearch, $likeSearch, $likeSearch);
     $stmt->execute();
     $resultLatest = $stmt->get_result();
 } else {
-    // Fetch all leads in ascending order for storage, but display latest first (DESC).
     $resultLatest = $conn->query("SELECT * FROM leads ORDER BY id DESC");
 }
 
-// Get user role for navbar display
+// Get user role for navbar
 $user = $_SESSION['user'];
 $role = htmlspecialchars(ucfirst($user['role'] ?? 'Guest'));
 $username = htmlspecialchars($user['username'] ?? 'User');
 ?>
-
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -120,7 +130,7 @@ $username = htmlspecialchars($user['username'] ?? 'User');
             font-weight: bold;
         }
         .navbar .links a:hover {
-            text-decoration: none;
+            text-decoration: underline;
         }
         .content {
             padding: 20px;
@@ -178,27 +188,30 @@ $username = htmlspecialchars($user['username'] ?? 'User');
         tr:hover {
             background-color: #e6f7ff;
         }
+        .no-results {
+            text-align: center;
+            color: #888;
+            font-size: 16px;
+            margin-top: 20px;
+        }
     </style>
 </head>
 <body>
 <div class="navbar">
     <div><strong>Chandusoft <?= $role ?></strong></div>
     <div class="links">
-        Welcome <?= $role ?>!
+        Welcome <?= $username ?>!
         <a href="/app/dashboard.php">Dashboard</a>
-         <!-- Dynamic catalog link based on user role -->
-    <?php if ($role === 'Admin'): ?>
-        <a href="/admin/catalog.php">Admin Catalog</a>
-        <a href="/public/catalog.php">Public Catalog</a>
-        <a href="/admin/orders.php">Orders</a>
-    <?php elseif ($role === 'Editor'): ?>
-        <a href="/public/catalog.php">Public Catalog</a>
-    <?php endif; ?>
+        <?php if ($role === 'Admin'): ?>
+            <a href="/admin/catalog.php">Admin Catalog</a>
+            <a href="/public/catalog.php">Public Catalog</a>
+            <a href="/admin/orders.php">Orders</a>
+        <?php elseif ($role === 'Editor'): ?>
+            <a href="/public/catalog.php">Public Catalog</a>
+        <?php endif; ?>
         <a href="/admin/admin-leads.php">Leads</a>
         <a href="/admin/pages.php">Pages</a>
-        <a href="/admin/logout.php">Logout</a>
-
-    </div>
+        <a href="?logout=1">Logout</a>
     </div>
 </div>
 
@@ -209,22 +222,33 @@ $username = htmlspecialchars($user['username'] ?? 'User');
     <form method="get" class="search-form">
         <input type="text" name="search" placeholder="Search leads..." value="<?= htmlspecialchars($search) ?>">
         <input type="submit" value="Search">
+        <?php if ($search !== ''): ?>
+            <a href="admin-leads.php" style="margin-left:10px; color:#3498db; text-decoration:none;">Clear</a>
+        <?php endif; ?>
     </form>
 
-    <table>
-        <tr><th>Name</th><th>Email</th><th>Message</th><th>Submitted At</th><th>IP</th></tr>
-        <?php while($row = $resultLatest->fetch_assoc()): ?>
-        <tr>
-    
-            <td><?= htmlspecialchars($row['name']) ?></td>
-            <td><?= htmlspecialchars($row['email']) ?></td>
-            <td><?= htmlspecialchars($row['message']) ?></td>
-            <td><?= htmlspecialchars($row['created_at']) ?></td>
-            <td><?= !empty($row['IP']) ? htmlspecialchars($row['IP']) : '' ?></td>
-        </tr>
-        <?php endwhile; ?>
-    </table>
+    <?php if ($resultLatest && $resultLatest->num_rows > 0): ?>
+        <table>
+            <tr><th>Name</th><th>Email</th><th>Message</th><th>Submitted At</th><th>IP</th></tr>
+            <?php while($row = $resultLatest->fetch_assoc()): ?>
+            <tr>
+                <td><?= htmlspecialchars($row['name']) ?></td>
+                <td><?= htmlspecialchars($row['email']) ?></td>
+                <td><?= htmlspecialchars($row['message']) ?></td>
+                <td><?= htmlspecialchars($row['created_at']) ?></td>
+                <td><?= !empty($row['IP']) ? htmlspecialchars($row['IP']) : '' ?></td>
+            </tr>
+            <?php endwhile; ?>
+        </table>
+    <?php else: ?>
+        <p class="no-results">
+            <?php if ($search !== ''): ?>
+                No results found for "<strong><?= htmlspecialchars($search) ?></strong>".
+            <?php else: ?>
+                No leads available.
+            <?php endif; ?>
+        </p>
+    <?php endif; ?>
 </div>
-
 </body>
 </html>

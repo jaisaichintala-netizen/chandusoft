@@ -23,11 +23,14 @@ $statusFilter = isset($_GET['status']) && in_array($_GET['status'], ['published'
 // ✅ Build WHERE clause
 $where = "WHERE status = ?";
 $params = [$statusFilter];
- 
 if ($search) {
-    $where .= " AND title LIKE ?";
-    $params[] = "%$search%";
+    // Escape % and _ so they are treated literally
+    $escapedSearch = str_replace(['%', '_'], ['\%', '\_'], $search);
+
+    $where .= " AND title LIKE ? ESCAPE '\\'";
+    $params[] = "%$escapedSearch%";
 }
+
  
 // ✅ Count total records
 try {

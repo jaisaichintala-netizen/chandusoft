@@ -14,8 +14,12 @@ $where = "WHERE status = 'published'";
 $params = [];
 
 if ($search) {
-    $where .= " AND title LIKE ?";
-    $params[] = "%$search%";
+    // Escape % and _ so they are treated literally
+    $escapedSearch = str_replace(['%', '_'], ['\\%', '\\_'], $search); // double backslash
+
+    // Use ESCAPE '\\\\' so MySQL sees a single backslash
+    $where .= " AND title LIKE ? ESCAPE '\\\\'";
+    $params[] = "%$escapedSearch%";
 }
 
 // Count total
@@ -28,6 +32,8 @@ $totalPages = ceil($total / $limit);
 $stmt = $pdo->prepare("SELECT * FROM catalog $where ORDER BY created_at DESC LIMIT $offset, $limit");
 $stmt->execute($params);
 $items = $stmt->fetchAll();
+
+
 
 // Log page view
 log_page("Visited Catalog Page | Search: $search | Page: $page");
