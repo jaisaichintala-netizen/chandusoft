@@ -1,0 +1,31 @@
+[2025-11-07 10:15:11][INFO] Viewed catalog item: log | IP: 127.0.0.1
+[2025-11-07 10:27:13][INFO] ❌ Payment canceled for Order ID 46 (Ref: F15CD0C03989) — User canceled payment on Stripe checkout page. | IP: ::1
+[2025-11-07 10:35:49][INFO] Viewed catalog item: log | IP: ::1
+[2025-11-07 10:35:57][INFO] Viewed catalog item: log | IP: ::1
+[2025-11-07 10:36:48][INFO] ❌ Payment canceled for Order ID 47 (Ref: 95FCDC69EDDE) — User canceled payment on Stripe checkout page. | IP: ::1
+[2025-11-07 10:40:41][INFO] ❌ Payment canceled for Order ID 47 (Ref: 95FCDC69EDDE) — User canceled payment on Stripe checkout page. | IP: ::1
+[2025-11-07 12:11:01][INFO] 🧪 Test mode order #49 left as pending. | IP: ::1
+[2025-11-07 12:19:59][INFO] Viewed catalog item: log | IP: ::1
+[2025-11-07 12:20:04][INFO] Viewed catalog item: log | IP: ::1
+[2025-11-07 14:43:34][INFO] Catalog viewed | Page: 1 | Status: published | Search: '' | IP: 127.0.0.1
+[2025-11-07 14:44:27][INFO] 📸 Image uploaded for 'hero' — file: uploads/catalog_1762506867.jpg | IP: 127.0.0.1
+[2025-11-07 14:44:27][CREATE] 🆕 Created catalog item #10 — title: 'hero', price: 148.24, status: 'published' | IP: 127.0.0.1
+[2025-11-07 14:44:27][INFO] Catalog viewed | Page: 1 | Status: published | Search: '' | IP: 127.0.0.1
+[2025-11-07 14:55:09][ERROR] ⚠️ Image too large for 'hero' (2673768 bytes) | IP: 127.0.0.1
+[2025-11-07 14:55:09][INFO] Catalog item added: 'hero' by admin | IP: 127.0.0.1
+[2025-11-07 14:55:13][INFO] Catalog viewed | Page: 1 | Status: published | Search: '' | IP: 127.0.0.1
+[2025-11-07 14:55:53][ERROR] ⚠️ Image upload failed for 'musthafa' | IP: 127.0.0.1
+[2025-11-07 14:55:53][INFO] Catalog item added: 'musthafa' by admin | IP: 127.0.0.1
+[2025-11-07 14:58:32][ERROR] ⚠️ Image upload failed for 'musthafa' | IP: 127.0.0.1
+[2025-11-07 14:58:32][INFO] Catalog item added: 'musthafa' by admin | IP: 127.0.0.1
+[2025-11-07 14:59:53][ERROR] ⚠️ Image upload failed for 'musthafa' | IP: 127.0.0.1
+[2025-11-07 14:59:53][INFO] Catalog item added: 'musthafa' by admin | IP: 127.0.0.1
+[2025-11-07 15:01:25][ERROR] ⚠️ Image upload failed for 'jaisai' | IP: 127.0.0.1
+[2025-11-07 15:01:25][INFO] Catalog item added: 'jaisai' by admin | IP: 127.0.0.1
+[2025-11-07 15:02:11][INFO] 📸 Image uploaded for 'jaisai' — file: uploads/catalog_1762507931.jpg | IP: 127.0.0.1
+[2025-11-07 15:02:12][CREATE] 🆕 Created catalog item #11 — title: 'jaisai', price: 5991.25, status: 'published' | IP: 127.0.0.1
+[2025-11-07 15:02:12][INFO] Catalog viewed | Page: 1 | Status: published | Search: '' | IP: 127.0.0.1
+[2025-11-07 15:02:24][INFO] Catalog viewed | Page: 1 | Status: published | Search: '' | IP: 127.0.0.1
+[2025-11-07 15:38:28][INFO] Viewed catalog item: jaisai | IP: 127.0.0.1
+[2025-11-07 17:27:30][INFO] Catalog viewed | Page: 1 | Status: published | Search: '' | IP: 127.0.0.1
+[2025-11-07 17:27:46][INFO] Catalog viewed | Page: 1 | Status: published | Search: '' | IP: 127.0.0.1

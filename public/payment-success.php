@@ -1,15 +1,77 @@
 <?php
+// =============================================================
+// Chandusoft – Payment Success / Order Confirmation
+// =============================================================
 session_start();
 require_once __DIR__ . '/../app/config.php';
 require_once __DIR__ . '/../app/logger.php';
-?>
 
+// -------------------------------------------------------------
+// 1️⃣ Load order info
+// -------------------------------------------------------------
+$order_id = intval($_GET['order_id'] ?? 0);
+$is_test_mode = isset($_GET['testmode']);
+
+if ($order_id <= 0) {
+    echo "<h3>⚠️ Invalid order ID.</h3>";
+    exit;
+}
+
+$stmt = $pdo->prepare("SELECT * FROM orders WHERE id = ?");
+$stmt->execute([$order_id]);
+$order = $stmt->fetch(PDO::FETCH_ASSOC);
+
+if (!$order) {
+    echo "<h3>⚠️ Order not found.</h3>";
+    exit;
+}
+
+$payment_method = $order['payment_gateway'];
+$status = strtolower(trim($order['payment_status']));
+$order_ref = $order['order_ref'] ?? 'N/A';
+
+// -------------------------------------------------------------
+// 2️⃣ Auto-update status for test or manual success confirmation
+// -------------------------------------------------------------
+if ($status === 'pending' && !$is_test_mode) {
+    try {
+        $update = $pdo->prepare("
+            UPDATE orders
+            SET payment_status = 'paid', updated_at = NOW()
+            WHERE id = ? AND payment_status = 'pending'
+        ");
+        $update->execute([$order_id]);
+
+        $status = 'paid';
+        log_catalog("✅ Order #$order_id manually marked as PAID on success page.");
+    } catch (Exception $e) {
+        log_catalog("❌ Failed to update payment status for order #$order_id: " . $e->getMessage(), 'ERROR');
+    }
+} elseif ($status === 'pending' && $is_test_mode) {
+    log_catalog("🧪 Test mode order #$order_id left as pending.");
+}
+
+// -------------------------------------------------------------
+// 3️⃣ Prepare dynamic message
+// -------------------------------------------------------------
+$message = '';
+if ($status === 'paid') {
+    $message = "✅ Payment Successful! Your order #$order_id is confirmed and paid.";
+} elseif ($status === 'failed') {
+    $message = "❌ Payment Failed! Please try again or contact support.";
+} else {
+    $message = "🕒 Payment Pending! Order #$order_id is awaiting Stripe confirmation.";
+}
+
+// -------------------------------------------------------------
+// 4️⃣ Render HTML
+// -------------------------------------------------------------
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <title>Order Confirmation</title>
-
 <style>
     body {
         font-family: Arial, sans-serif;
@@ -26,7 +88,7 @@ require_once __DIR__ . '/../app/logger.php';
         box-shadow: 0 4px 20px rgba(0,0,0,0.1);
     }
     h2 {
-        color: #28a745;
+        color: <?php echo ($status === 'failed') ? '#dc3545' : (($status === 'pending') ? '#ffc107' : '#28a745'); ?>;
         text-align: center;
         margin-bottom: 25px;
     }
@@ -80,49 +142,31 @@ require_once __DIR__ . '/../app/logger.php';
 <body>
 
 <div class="container">
-<?php
-$order_id = intval($_GET['order_id'] ?? 0);
-$is_test_mode = isset($_GET['testmode']) ? true : false;
+    <h2><?= $message ?></h2>
 
-if ($order_id) {
-    $stmt = $pdo->prepare("SELECT * FROM orders WHERE id = ?");
-    $stmt->execute([$order_id]);
-    $order = $stmt->fetch(PDO::FETCH_ASSOC);
+    <h3>Order Details:</h3>
+        <p><strong>Customer Name:</strong> <?= htmlspecialchars($order['customer_name']) ?></p>
+        <p><strong>Order Reference:</strong> <?= htmlspecialchars($order_ref) ?></p>
+        <p><strong>Payment Gateway:</strong> <?= htmlspecialchars($payment_method) ?></p>
+        <p><strong>Total Amount:</strong> $<?= number_format($order['total'], 2) ?></p>
+        <p><strong>Payment Status:</strong> <?= ucfirst($status) ?></p>
 
-    if ($order) {
-        $payment_method = $order['payment_gateway'];
+        <?php $txn_id = $order['txn_id'] ?? ''; ?>
+        <p><strong>Transaction ID:</strong> <?= htmlspecialchars($txn_id ?: 'N/A') ?></p>
 
-        // ✅ Update payment status only if not test/sandbox mode
-        if (!$is_test_mode) {
-            $stmt_update = $pdo->prepare("UPDATE orders SET payment_status = 'paid' WHERE id = ?");
-            $stmt_update->execute([$order_id]);
-            echo "<h2>✅ Payment Successful! Your order ID: $order_id is confirmed and paid.</h2>";
-        } else {
-            // In test mode, leave as pending
-            $stmt_update = $pdo->prepare("UPDATE orders SET payment_status = 'pending' WHERE id = ?");
-            $stmt_update->execute([$order_id]);
-            echo "<h2>🧪 Test Mode Payment: Order ID $order_id received (Pending confirmation).</h2>";
-        }
-
-        echo "<h3>Order Details:</h3>";
-        echo "<p><strong>Customer Name:</strong> " . htmlspecialchars($order['customer_name']) . "</p>";
-        echo "<p><strong>Order Reference:</strong> " . htmlspecialchars($order['order_ref']) . "</p>";
-        echo "<p><strong>Payment Gateway:</strong> " . htmlspecialchars($payment_method) . "</p>";
-        echo "<p><strong>Total Amount:</strong> $" . number_format($order['total'], 2) . "</p>";
-        echo "<p><strong>Payment Status:</strong> " . ucfirst($order['payment_status']) . "</p>";
-
+    <h3>Purchased Products:</h3>
+    <table>
+        <tr>
+            <th>Product Name</th>
+            <th>Quantity</th>
+            <th>Price</th>
+            <th>Subtotal</th>
+        </tr>
+        <?php
         $stmt_items = $pdo->prepare("SELECT * FROM order_items WHERE order_id = ?");
         $stmt_items->execute([$order_id]);
         $order_items = $stmt_items->fetchAll(PDO::FETCH_ASSOC);
 
-        echo "<h3>Purchased Products:</h3>";
-        echo "<table>
-                <tr>
-                    <th>Product Name</th>
-                    <th>Quantity</th>
-                    <th>Price</th>
-                    <th>Subtotal</th>
-                </tr>";
         foreach ($order_items as $item) {
             $subtotal = $item['price'] * $item['quantity'];
             echo "<tr>
@@ -130,17 +174,13 @@ if ($order_id) {
                     <td>" . htmlspecialchars($item['quantity']) . "</td>
                     <td>$" . number_format($item['price'], 2) . "</td>
                     <td>$" . number_format($subtotal, 2) . "</td>
-                </tr>";
+                  </tr>";
         }
-        echo "</table>";
-    } else {
-        echo "<h3>Order not found.</h3>";
-    }
-} else {
-    echo "<h3>Invalid order ID.</h3>";
-}
-?>
-<a href="/public/catalog" class="back-link">Back to Shop</a>
+        ?>
+    </table>
+
+    <a href="/public/catalog" class="back-link">Back to Shop</a>
 </div>
+
 </body>
 </html>

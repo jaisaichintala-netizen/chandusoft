@@ -1,15 +1,48 @@
 <?php
+// =============================================================
+// Chandusoft – Stripe Checkout Cancel Handler
+// =============================================================
+
 require_once __DIR__ . '/../app/config.php';
 require_once __DIR__ . '/../app/logger.php';
 
+// -------------------------------------------------------------
+// 1️⃣ Identify canceled order
+// -------------------------------------------------------------
 $order_id = intval($_GET['order_id'] ?? 0);
+$reason = "User canceled payment on Stripe checkout page.";
 
-if ($order_id) {
-    $pdo->prepare("UPDATE orders SET payment_status='failed' WHERE id=?")->execute([$order_id]);
-    log_catalog("Payment canceled for order $order_id");
+if ($order_id > 0) {
+    try {
+        // Fetch order info for clarity
+        $stmt = $pdo->prepare("SELECT order_ref, payment_status FROM orders WHERE id = ?");
+        $stmt->execute([$order_id]);
+        $order = $stmt->fetch(PDO::FETCH_ASSOC);
+
+        if ($order) {
+            // Only mark as failed if not already paid
+            if ($order['payment_status'] !== 'paid') {
+                $update = $pdo->prepare("
+                    UPDATE orders 
+                    SET payment_status = 'failed', updated_at = NOW() 
+                    WHERE id = ?
+                ");
+                $update->execute([$order_id]);
+
+                log_catalog("❌ Payment canceled for Order ID {$order_id} (Ref: {$order['order_ref']}) — $reason");
+            } else {
+                log_catalog("⚠️ Cancel attempted for already paid Order ID {$order_id} (Ref: {$order['order_ref']}) — skipped.");
+            }
+        } else {
+            log_catalog("⚠️ Payment cancel attempted for non-existent Order ID $order_id");
+        }
+    } catch (Exception $e) {
+        log_catalog("❌ DB update failed on cancel for Order ID $order_id: " . $e->getMessage(), 'ERROR');
+    }
+} else {
+    log_catalog("⚠️ Payment cancel accessed without valid order_id parameter.");
 }
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>

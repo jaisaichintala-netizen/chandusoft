@@ -1,0 +1,15 @@
+[2025-11-06 04:21:24][INFO] Catalog viewed | Page: 1 | Status: published | Search: '' | IP: 127.0.0.1
+[2025-11-06 04:22:17][INFO] Test mode order #32 pending confirmation | IP: ::1
+[2025-11-06 05:04:46][INFO] Catalog viewed | Page: 1 | Status: published | Search: '' | IP: 127.0.0.1
+[2025-11-06 12:02:04][INFO] Viewed catalog item: log | IP: 127.0.0.1
+[2025-11-06 12:02:13][INFO] Viewed catalog item: tech 1 | IP: 127.0.0.1
+[2025-11-06 12:42:31][INFO] Catalog viewed | Page: 1 | Status: published | Search: '' | IP: 127.0.0.1
+[2025-11-06 12:42:56][INFO] Viewed catalog item: log | IP: 127.0.0.1
+[2025-11-06 12:44:06][INFO] Viewed catalog item: tech 1 | IP: 127.0.0.1
+[2025-11-06 13:07:28][INFO] Viewed catalog item: log | IP: 127.0.0.1
+[2025-11-06 13:08:34][INFO] Catalog viewed | Page: 1 | Status: published | Search: '' | IP: 127.0.0.1
+[2025-11-06 13:08:34][INFO] Catalog viewed | Page: 1 | Status: published | Search: '' | IP: 127.0.0.1
+[2025-11-06 13:22:55][INFO] Viewed catalog item: Hero | IP: 127.0.0.1
+[2025-11-06 13:23:11][INFO] ❌ Payment canceled for order ID 41 (Ref: D349E79906F8) — User canceled payment on Stripe checkout page. | IP: 127.0.0.1
+[2025-11-06 13:23:50][INFO] ❌ Payment canceled for order ID 42 (Ref: 54D2BF74735E) — User canceled payment on Stripe checkout page. | IP: 127.0.0.1
+[2025-11-06 13:27:56][INFO] ❌ Payment canceled for order ID 44 (Ref: 9D62E326CB0F) — User canceled payment on Stripe checkout page. | IP: 127.0.0.1

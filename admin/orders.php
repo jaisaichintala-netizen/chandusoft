@@ -2,26 +2,49 @@
 session_start();
 $_SESSION['role'] = 'admin'; // 🔥 Temporary: allow access for testing
 require_once __DIR__ . '/../app/config.php';
-
+ 
+// ✅ Always define these first
+$statuses = ['pending', 'paid', 'failed', 'refunded', 'cancelled'];
+$totalPages = 1;
+$page = 1;
+ 
 // ==========================================================
 // 🔍 Search & Filter
 // ==========================================================
 $search = isset($_GET['search']) ? trim($_GET['search']) : '';
 $statusFilter = isset($_GET['status']) ? trim($_GET['status']) : '';
-
+ 
+// ✅ Handle wildcard-only search like "%" or "_"
+if ($search === '%' || $search === '_' || $search === '') {
+    // if user types only a wildcard or leaves blank, show nothing (if wildcard)
+    if ($search === '%' || $search === '_') {
+        $orders = [];
+        $totalOrders = 0;
+    } else {
+        // if blank search, show all normally (we'll continue below)
+        $search = '';
+        goto normal_query;
+    }
+} else {
+    goto normal_query;
+}
+ 
+goto render_page;
+ 
 // ==========================================================
+// 🧮 Normal Query Section
+// ==========================================================
+normal_query:
+ 
 // 📄 Pagination setup
-// ==========================================================
 $limit = 10;
 $page = isset($_GET['page']) && is_numeric($_GET['page']) ? (int)$_GET['page'] : 1;
 $offset = ($page - 1) * $limit;
-
-// ==========================================================
+ 
 // 📋 Build base SQL
-// ==========================================================
 $sql = "FROM orders o WHERE 1=1";
 $params = [];
-
+ 
 if ($search !== '') {
     $sql .= " AND (o.customer_email LIKE :search OR o.order_ref LIKE :search)";
     $params[':search'] = '%' . $search . '%';
@@ -30,27 +53,23 @@ if ($statusFilter !== '') {
     $sql .= " AND o.payment_status = :status";
     $params[':status'] = $statusFilter;
 }
-
-// ==========================================================
+ 
 // 📊 Count total records
-// ==========================================================
 $countStmt = $pdo->prepare("SELECT COUNT(*) " . $sql);
 $countStmt->execute($params);
 $totalOrders = $countStmt->fetchColumn();
 $totalPages = ceil($totalOrders / $limit);
-
-// ==========================================================
+ 
 // 🧾 Fetch orders
-// ==========================================================
 $sqlOrders = "
-    SELECT o.id, o.order_ref, o.customer_name, o.customer_email, 
+    SELECT o.id, o.order_ref, o.customer_name, o.customer_email,
            o.total, o.payment_gateway, o.payment_status, o.created_at
     $sql
     ORDER BY o.created_at DESC
     LIMIT :limit OFFSET :offset
 ";
 $stmt = $pdo->prepare($sqlOrders);
-
+ 
 foreach ($params as $key => $val) {
     $stmt->bindValue($key, $val);
 }
@@ -58,13 +77,9 @@ $stmt->bindValue(':limit', $limit, PDO::PARAM_INT);
 $stmt->bindValue(':offset', $offset, PDO::PARAM_INT);
 $stmt->execute();
 $orders = $stmt->fetchAll(PDO::FETCH_ASSOC);
-
-// ==========================================================
-// 🧮 Status options
-// ==========================================================
-$statuses = ['pending', 'paid', 'failed', 'refunded', 'cancelled'];
+ 
+render_page:
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -81,28 +96,23 @@ $statuses = ['pending', 'paid', 'failed', 'refunded', 'cancelled'];
             margin-bottom: 20px;
         }
         table {
-    border-collapse: collapse;
-    width: 100%;
-    background: #fff;
-    border: 1px solid #ccc; /* outer border */
-    border-radius: 6px;
-    overflow: hidden;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-}
-
-th, td {
-    padding: 12px 15px;
-    border: 1px solid #ccc; /* vertical + horizontal lines */
-    text-align: left;
-}
-
-thead {
-    background: #007BFF;
-    color: #fff;
-    border-bottom: 2px solid #0056b3;
-}
-
-        
+            border-collapse: collapse;
+            width: 100%;
+            background: #fff;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        th, td {
+            padding: 12px 15px;
+            border: 1px solid #ccc;
+            text-align: left;
+        }
+        thead {
+            background: #007BFF;
+            color: #fff;
+        }
         .filter-bar {
             margin-bottom: 20px;
             display: flex;
@@ -164,7 +174,7 @@ thead {
         .view-btn:hover {
             background: #138496;
         }
-
+ 
         /* Modal styling */
         .modal {
             display: none;
@@ -183,14 +193,8 @@ thead {
             box-shadow: 0 2px 10px rgba(0,0,0,0.2);
             position: relative;
         }
-        .modal-content h2 {
-            margin-top: 0;
-            color: #333;
-        }
-        .modal-content p {
-            margin: 8px 0;
-            font-size: 14px;
-        }
+        .modal-content h2 { margin-top: 0; color: #333; }
+        .modal-content p { margin: 8px 0; font-size: 14px; }
         .close {
             position: absolute;
             right: 10px;
@@ -198,20 +202,17 @@ thead {
             font-size: 18px;
             cursor: pointer;
         }
-        .close:hover {
-            color: #007BFF;
-        }
-        
+        .close:hover { color: #007BFF; }
     </style>
 </head>
 <body>
-
+ 
 <h1>Orders</h1>
-
+ 
 <form method="get" class="filter-bar">
     <input type="text" name="search" placeholder="Search by email or order ref"
            value="<?= htmlspecialchars($search) ?>">
-
+ 
     <select name="status">
         <option value="">All Statuses</option>
         <?php foreach ($statuses as $status): ?>
@@ -220,10 +221,10 @@ thead {
             </option>
         <?php endforeach; ?>
     </select>
-
+ 
     <button type="submit">Filter</button>
 </form>
-
+ 
 <table>
     <thead>
         <tr>
@@ -239,7 +240,7 @@ thead {
         </tr>
     </thead>
     <tbody>
-        <?php if ($orders): ?>
+        <?php if (!empty($orders)): ?>
             <?php foreach ($orders as $order): ?>
                 <tr>
                     <td><?= $order['id'] ?></td>
@@ -265,7 +266,7 @@ thead {
         <?php endif; ?>
     </tbody>
 </table>
-
+ 
 <div class="pagination">
     <?php if ($totalPages > 1): ?>
         <?php for ($i = 1; $i <= $totalPages; $i++): ?>
@@ -276,7 +277,7 @@ thead {
         <?php endfor; ?>
     <?php endif; ?>
 </div>
-
+ 
 <!-- Modal -->
 <div id="orderModal" class="modal">
     <div class="modal-content">
@@ -285,12 +286,12 @@ thead {
         <div id="modalBody"></div>
     </div>
 </div>
-
+ 
 <script>
     const modal = document.getElementById('orderModal');
     const modalBody = document.getElementById('modalBody');
     const closeBtn = document.querySelector('.close');
-
+ 
     document.querySelectorAll('.view-btn').forEach(btn => {
         btn.addEventListener('click', () => {
             const order = JSON.parse(btn.getAttribute('data-order'));
@@ -306,10 +307,10 @@ thead {
             modal.style.display = 'block';
         });
     });
-
+ 
     closeBtn.onclick = () => modal.style.display = 'none';
     window.onclick = e => { if (e.target === modal) modal.style.display = 'none'; };
 </script>
-
+ 
 </body>
 </html>

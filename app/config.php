@@ -1,5 +1,7 @@
 <?php
 require_once __DIR__ . '/../vendor/autoload.php';
+date_default_timezone_set('Asia/Kolkata');
+
 
 $dotenv = Dotenv\Dotenv::createImmutable(__DIR__ . '/../');
 $dotenv->load();
@@ -32,7 +34,12 @@ try {
 
 // Stripe & PayPal config
 define('STRIPE_SECRET_KEY', $_ENV['STRIPE_SECRET_KEY']);
+define('STRIPE_PUBLISHABLE_KEY', $_ENV['STRIPE_PUBLISHABLE_KEY']);
+define('STRIPE_WEBHOOK_SECRET', $_ENV['STRIPE_WEBHOOK_SECRET']);
 define('PAYPAL_CLIENT_ID', $_ENV['PAYPAL_CLIENT_ID']);
 define('PAYPAL_SECRET', $_ENV['PAYPAL_SECRET']);
 define('PAYPAL_SANDBOX', filter_var($_ENV['PAYPAL_SANDBOX'], FILTER_VALIDATE_BOOLEAN));
 define('APP_URL', $_ENV['APP_URL']);
+
+
+ 

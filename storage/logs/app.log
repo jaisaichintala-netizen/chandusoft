@@ -264,3 +264,1092 @@
 [2025-11-04 12:00:54][INFO] ✅Successful login by sam12 (sam@gmail.com) - Role: Editor | IP: 127.0.0.1
 [2025-11-04 12:12:47][WARNING] Failed login attempt for admin@gmail.com | IP: 127.0.0.1
 [2025-11-04 12:12:51][INFO] ✅Successful login by admin (admin@gmail.com) - Role: Admin | IP: 127.0.0.1
+[2025-11-05 10:34:37] Permission test OK
+[2025-11-05 11:22:10][INFO] 🛒 Checkout started — Total: 110.45 USD | IP: 127.0.0.1
+[2025-11-05 11:22:10][INFO] 🧾 Order 31 created (Ref: 545BE69119C1, Payment: stripe) | IP: 127.0.0.1
+[2025-11-05 11:22:10][INFO] 🌐 Using base URL: http://chandusoft.test | IP: 127.0.0.1
+[2025-11-05 11:22:10][INFO] 💳 Creating Stripe session for Order #31 | IP: 127.0.0.1
+[2025-11-05 11:22:11][INFO] ✅ Redirecting to Stripe checkout: https://checkout.stripe.com/c/pay/cs_test_a1m3N42FilHprXFbzCnd2w6LLzrvjVGMov4ySaoCnh5YAwsSEmwsP7x3vF#fidnandhYHdWcXxpYCc%2FJ2FgY2RwaXEnKSdkdWxOYHwnPyd1blpxYHZxWjA0VlQ3VmtUUVdsd0tASnZrTVdBVlBTfDN9TFVPf01SdW1wdWhxMGhkQjBTdmBqMEFCbVdcNF1ycW9IaF9XcW09UEBCPWtKSGJ1TElgak5WXF1sbzdpdEJ8NTU9f3x1czFfdycpJ2N3amhWYHdzYHcnP3F3cGApJ2dkZm5id2pwa2FGamlqdyc%2FJyZjY2NjY2MnKSdpZHxqcHFRfHVgJz8ndmxrYmlgWmxxYGgnKSdga2RnaWBVaWRmYG1qaWFgd3YnP3F3cGB4JSUl | IP: 127.0.0.1
+[2025-11-05 11:28:22][INFO] ✅ Stripe webhook initialized | IP: 127.0.0.1
+[2025-11-05 11:28:22][INFO] 🌐 Webhook triggered from host: http://chandusoft.test | IP: 127.0.0.1
+[2025-11-05 11:28:22][WARNING] ⚠️ Webhook received empty payload | IP: 127.0.0.1
+[2025-11-05 11:28:23][INFO] ✅ Stripe webhook initialized | IP: 127.0.0.1
+[2025-11-05 11:28:23][INFO] 🌐 Webhook triggered from host: http://chandusoft.test | IP: 127.0.0.1
+[2025-11-05 11:28:23][WARNING] ⚠️ Webhook received empty payload | IP: 127.0.0.1
+[2025-11-05 11:42:07][INFO] ✅ Stripe webhook initialized | IP: 127.0.0.1
+[2025-11-05 11:42:07][INFO] 🌐 Webhook triggered from host: http://chandusoft.test | IP: 127.0.0.1
+[2025-11-05 11:42:07][WARNING] ⚠️ Webhook received empty payload | IP: 127.0.0.1
+[2025-11-06 04:21:48][INFO] 🛒 Checkout started — Total: 1523.99 USD | IP: ::1
+[2025-11-06 04:21:48][INFO] 🧾 Order 32 created (Ref: D8D4F39FF1B0, Payment: stripe) | IP: ::1
+[2025-11-06 04:21:48][INFO] 🌐 Using base URL: https://overfearfully-prius-ulises.ngrok-free.dev/public | IP: ::1
+[2025-11-06 04:21:48][INFO] 💳 Creating Stripe session for Order #32 | IP: ::1
+[2025-11-06 04:21:56][INFO] ✅ Redirecting to Stripe checkout: https://checkout.stripe.com/c/pay/cs_test_a1bcg9e8AZTiVDb02WiGJdF5JeCYG8fIwfu0aFAq8jn43126l2vh8Z7BCB#fidnandhYHdWcXxpYCc%2FJ2FgY2RwaXEnKSdkdWxOYHwnPyd1blpxYHZxWjA0VlQ3VmtUUVdsd0tASnZrTVdBVlBTfDN9TFVPf01SdW1wdWhxMGhkQjBTdmBqMEFCbVdcNF1ycW9IaF9XcW09UEBCPWtKSGJ1TElgak5WXF1sbzdpdEJ8NTU9f3x1czFfdycpJ2N3amhWYHdzYHcnP3F3cGApJ2dkZm5id2pwa2FGamlqdyc%2FJyZjY2NjY2MnKSdpZHxqcHFRfHVgJz8ndmxrYmlgWmxxYGgnKSdga2RnaWBVaWRmYG1qaWFgd3YnP3F3cGB4JSUl | IP: ::1
+[2025-11-06 05:12:32][INFO] ✅ Stripe webhook initialized | IP: 127.0.0.1
+[2025-11-06 05:12:32][INFO] 🌐 Webhook triggered from host: https://overfearfully-prius-ulises.ngrok-free.dev | IP: 127.0.0.1
+[2025-11-06 05:12:32][WARNING] ⚠️ Webhook received empty payload | IP: 127.0.0.1
+[2025-11-06 05:14:36][INFO] ✅ Stripe webhook initialized | IP: 127.0.0.1
+[2025-11-06 05:14:36][INFO] 🌐 Webhook triggered from host: https://overfearfully-prius-ulises.ngrok-free.dev | IP: 127.0.0.1
+[2025-11-06 05:14:36][WARNING] ⚠️ Webhook received empty payload | IP: 127.0.0.1
+[2025-11-06 05:14:38][INFO] ✅ Stripe webhook initialized | IP: 127.0.0.1
+[2025-11-06 05:14:38][INFO] 🌐 Webhook triggered from host: https://overfearfully-prius-ulises.ngrok-free.dev | IP: 127.0.0.1
+[2025-11-06 05:14:38][WARNING] ⚠️ Webhook received empty payload | IP: 127.0.0.1
+[2025-11-06 05:14:39][INFO] ✅ Stripe webhook initialized | IP: 127.0.0.1
+[2025-11-06 05:14:39][INFO] 🌐 Webhook triggered from host: https://overfearfully-prius-ulises.ngrok-free.dev | IP: 127.0.0.1
+[2025-11-06 05:14:39][WARNING] ⚠️ Webhook received empty payload | IP: 127.0.0.1
+[2025-11-06 05:15:42][INFO] 🛒 Checkout started — Total: 1523.99 USD | IP: 127.0.0.1
+[2025-11-06 05:15:42][INFO] 🧾 Order 33 created (Ref: B7AEC61C1DA2, Payment: stripe) | IP: 127.0.0.1
+[2025-11-06 05:15:42][INFO] 🌐 Using base URL: https://overfearfully-prius-ulises.ngrok-free.dev/public | IP: 127.0.0.1
+[2025-11-06 05:15:42][INFO] 💳 Creating Stripe session for Order #33 | IP: 127.0.0.1
+[2025-11-06 05:15:43][INFO] ✅ Redirecting to Stripe checkout: https://checkout.stripe.com/c/pay/cs_test_a1to6c4PoFtPw1rMQzVSDdZUMZiwT3KOFTg1rtm9JgAZwgcHx3vo4BJfTN#fidnandhYHdWcXxpYCc%2FJ2FgY2RwaXEnKSdkdWxOYHwnPyd1blpxYHZxWjA0VlQ3VmtUUVdsd0tASnZrTVdBVlBTfDN9TFVPf01SdW1wdWhxMGhkQjBTdmBqMEFCbVdcNF1ycW9IaF9XcW09UEBCPWtKSGJ1TElgak5WXF1sbzdpdEJ8NTU9f3x1czFfdycpJ2N3amhWYHdzYHcnP3F3cGApJ2dkZm5id2pwa2FGamlqdyc%2FJyZjY2NjY2MnKSdpZHxqcHFRfHVgJz8ndmxrYmlgWmxxYGgnKSdga2RnaWBVaWRmYG1qaWFgd3YnP3F3cGB4JSUl | IP: 127.0.0.1
+[2025-11-06 05:24:07][INFO] ✅ Stripe webhook initialized | IP: 127.0.0.1
+[2025-11-06 05:24:07][INFO] 🌐 Webhook triggered from host: https://overfearfully-prius-ulises.ngrok-free.dev | IP: 127.0.0.1
+[2025-11-06 05:24:07][WARNING] ⚠️ Webhook received empty payload | IP: 127.0.0.1
+[2025-11-06 05:24:08][INFO] ✅ Stripe webhook initialized | IP: 127.0.0.1
+[2025-11-06 05:24:08][INFO] 🌐 Webhook triggered from host: https://overfearfully-prius-ulises.ngrok-free.dev | IP: 127.0.0.1
+[2025-11-06 05:24:08][WARNING] ⚠️ Webhook received empty payload | IP: 127.0.0.1
+[2025-11-06 05:24:08][INFO] ✅ Stripe webhook initialized | IP: 127.0.0.1
+[2025-11-06 05:24:08][INFO] 🌐 Webhook triggered from host: https://overfearfully-prius-ulises.ngrok-free.dev | IP: 127.0.0.1
+[2025-11-06 05:24:08][WARNING] ⚠️ Webhook received empty payload | IP: 127.0.0.1
+[2025-11-06 05:25:01][INFO] ✅ Stripe webhook initialized | IP: 127.0.0.1
+[2025-11-06 05:25:01][INFO] 🌐 Webhook triggered from host: http://chandusoft.test | IP: 127.0.0.1
+[2025-11-06 05:25:01][WARNING] ⚠️ Webhook received empty payload | IP: 127.0.0.1
+[2025-11-06 05:30:23][INFO] ✅ Stripe webhook initialized | IP: 127.0.0.1
+[2025-11-06 05:30:23][INFO] 🌐 Webhook triggered from host: http://chandusoft.test | IP: 127.0.0.1
+[2025-11-06 05:30:23][WARNING] ⚠️ Webhook received empty payload | IP: 127.0.0.1
+[2025-11-06 05:30:23][INFO] ✅ Stripe webhook initialized | IP: 127.0.0.1
+[2025-11-06 05:30:23][INFO] 🌐 Webhook triggered from host: http://chandusoft.test | IP: 127.0.0.1
+[2025-11-06 05:30:23][WARNING] ⚠️ Webhook received empty payload | IP: 127.0.0.1
+[2025-11-06 05:30:36][INFO] ✅ Stripe webhook initialized | IP: 127.0.0.1
+[2025-11-06 05:30:36][INFO] 🌐 Webhook triggered from host: https://overfearfully-prius-ulises.ngrok-free.dev | IP: 127.0.0.1
+[2025-11-06 05:30:36][WARNING] ⚠️ Webhook received empty payload | IP: 127.0.0.1
+[2025-11-06 05:33:27][INFO] 🛒 Checkout started — Total: 150 USD | IP: 127.0.0.1
+[2025-11-06 05:33:27][INFO] 🧾 Order 34 created (Ref: 53DD35D87536, Payment: stripe) | IP: 127.0.0.1
+[2025-11-06 05:33:27][INFO] 🌐 Using base URL: https://overfearfully-prius-ulises.ngrok-free.dev/public | IP: 127.0.0.1
+[2025-11-06 05:33:27][INFO] 💳 Creating Stripe session for Order #34 | IP: 127.0.0.1
+[2025-11-06 05:33:30][INFO] ✅ Redirecting to Stripe checkout: https://checkout.stripe.com/c/pay/cs_test_a1oEna0ayyoBxvkP6UuyisK0mukLL4WuR7Wx9GdKV3MizvzmJVRD9dpqd5#fidnandhYHdWcXxpYCc%2FJ2FgY2RwaXEnKSdkdWxOYHwnPyd1blpxYHZxWjA0VlQ3VmtUUVdsd0tASnZrTVdBVlBTfDN9TFVPf01SdW1wdWhxMGhkQjBTdmBqMEFCbVdcNF1ycW9IaF9XcW09UEBCPWtKSGJ1TElgak5WXF1sbzdpdEJ8NTU9f3x1czFfdycpJ2N3amhWYHdzYHcnP3F3cGApJ2dkZm5id2pwa2FGamlqdyc%2FJyZjY2NjY2MnKSdpZHxqcHFRfHVgJz8ndmxrYmlgWmxxYGgnKSdga2RnaWBVaWRmYG1qaWFgd3YnP3F3cGB4JSUl | IP: 127.0.0.1
+[2025-11-06 11:13:00][INFO] ✅ Stripe webhook initialized | IP: 127.0.0.1
+[2025-11-06 11:13:00][INFO] 🌐 Webhook triggered from host: https://overfearfully-prius-ulises.ngrok-free.dev | IP: 127.0.0.1
+[2025-11-06 11:13:00][WARNING] ⚠️ Webhook received empty payload. Method: GET | IP: 127.0.0.1 | IP: 127.0.0.1
+[2025-11-06 11:13:00][INFO] ✅ Stripe webhook initialized | IP: 127.0.0.1
+[2025-11-06 11:13:00][INFO] 🌐 Webhook triggered from host: https://overfearfully-prius-ulises.ngrok-free.dev | IP: 127.0.0.1
+[2025-11-06 11:13:00][WARNING] ⚠️ Webhook received empty payload. Method: GET | IP: 127.0.0.1 | IP: 127.0.0.1
+[2025-11-06 11:13:02][INFO] ✅ Stripe webhook initialized | IP: 127.0.0.1
+[2025-11-06 11:13:02][INFO] 🌐 Webhook triggered from host: http://chandusoft.test | IP: 127.0.0.1
+[2025-11-06 11:13:02][WARNING] ⚠️ Webhook received empty payload. Method: GET | IP: 127.0.0.1 | IP: 127.0.0.1
+[2025-11-06 11:13:02][INFO] ✅ Stripe webhook initialized | IP: 127.0.0.1
+[2025-11-06 11:13:02][INFO] 🌐 Webhook triggered from host: http://chandusoft.test | IP: 127.0.0.1
+[2025-11-06 11:13:02][WARNING] ⚠️ Webhook received empty payload. Method: GET | IP: 127.0.0.1 | IP: 127.0.0.1
+[2025-11-06 11:13:03][INFO] ✅ Stripe webhook initialized | IP: 127.0.0.1
+[2025-11-06 11:13:03][INFO] 🌐 Webhook triggered from host: http://chandusoft.test | IP: 127.0.0.1
+[2025-11-06 11:13:03][WARNING] ⚠️ Webhook received empty payload. Method: GET | IP: 127.0.0.1 | IP: 127.0.0.1
+[2025-11-06 11:13:04][INFO] ✅ Stripe webhook initialized | IP: 127.0.0.1
+[2025-11-06 11:13:04][INFO] 🌐 Webhook triggered from host: https://overfearfully-prius-ulises.ngrok-free.dev | IP: 127.0.0.1
+[2025-11-06 11:13:04][WARNING] ⚠️ Webhook received empty payload. Method: GET | IP: 127.0.0.1 | IP: 127.0.0.1
+[2025-11-06 11:13:04][INFO] ✅ Stripe webhook initialized | IP: 127.0.0.1
+[2025-11-06 11:13:04][INFO] 🌐 Webhook triggered from host: https://overfearfully-prius-ulises.ngrok-free.dev | IP: 127.0.0.1
+[2025-11-06 11:13:04][WARNING] ⚠️ Webhook received empty payload. Method: GET | IP: 127.0.0.1 | IP: 127.0.0.1
+[2025-11-06 11:13:06][INFO] ✅ Stripe webhook initialized | IP: 127.0.0.1
+[2025-11-06 11:13:06][INFO] 🌐 Webhook triggered from host: https://overfearfully-prius-ulises.ngrok-free.dev | IP: 127.0.0.1
+[2025-11-06 11:13:06][WARNING] ⚠️ Webhook received empty payload. Method: GET | IP: 127.0.0.1 | IP: 127.0.0.1
+[2025-11-06 11:13:06][INFO] ✅ Stripe webhook initialized | IP: 127.0.0.1
+[2025-11-06 11:13:06][INFO] 🌐 Webhook triggered from host: https://overfearfully-prius-ulises.ngrok-free.dev | IP: 127.0.0.1
+[2025-11-06 11:13:06][WARNING] ⚠️ Webhook received empty payload. Method: GET | IP: 127.0.0.1 | IP: 127.0.0.1
+[2025-11-06 11:13:26][INFO] 🛒 Checkout started — Total: 55.95 USD | IP: 127.0.0.1
+[2025-11-06 11:13:26][INFO] 🧾 Order 35 created (Ref: C1A9D3712166, Payment: stripe) | IP: 127.0.0.1
+[2025-11-06 11:13:26][INFO] 🌐 Using base URL: https://overfearfully-prius-ulises.ngrok-free.dev/public | IP: 127.0.0.1
+[2025-11-06 11:13:26][INFO] 💳 Creating Stripe session for Order #35 | IP: 127.0.0.1
+[2025-11-06 11:13:27][INFO] ✅ Redirecting to Stripe checkout: https://checkout.stripe.com/c/pay/cs_test_a1pS8Q8FY3jKXwersQRSbJfQlUauCuK5N9d020PgZ0GVWFwIPAo6i1NYdv#fidnandhYHdWcXxpYCc%2FJ2FgY2RwaXEnKSdkdWxOYHwnPyd1blpxYHZxWjA0VlQ3VmtUUVdsd0tASnZrTVdBVlBTfDN9TFVPf01SdW1wdWhxMGhkQjBTdmBqMEFCbVdcNF1ycW9IaF9XcW09UEBCPWtKSGJ1TElgak5WXF1sbzdpdEJ8NTU9f3x1czFfdycpJ2N3amhWYHdzYHcnP3F3cGApJ2dkZm5id2pwa2FGamlqdyc%2FJyZjY2NjY2MnKSdpZHxqcHFRfHVgJz8ndmxrYmlgWmxxYGgnKSdga2RnaWBVaWRmYG1qaWFgd3YnP3F3cGB4JSUl | IP: 127.0.0.1
+[2025-11-06 11:17:43][INFO] ✅ Stripe webhook initialized | IP: ::1
+[2025-11-06 11:17:43][INFO] 🌐 Webhook triggered from host: https://overfearfully-prius-ulises.ngrok-free.dev | IP: ::1
+[2025-11-06 11:17:43][WARNING] ⚠️ Webhook received empty payload. Method: GET | IP: ::1 | IP: ::1
+[2025-11-06 11:33:29][INFO] ✅ Stripe webhook initialized | IP: 127.0.0.1
+[2025-11-06 11:33:29][INFO] 🌐 Webhook triggered from host: https://overfearfully-prius-ulises.ngrok-free.dev | IP: 127.0.0.1
+[2025-11-06 11:33:29][INFO] 📬 Received Stripe event payload: {
+  "id": "evt_1SQLyrQTRirNEOsnx69bQf2P",
+  "object": "event",
+  "api_version": "2025-10-29.clover",
+  "created": 1762407813,
+  "data": {
+    "object": {
+      "id": "cs_test_a1pS8Q8FY3jKXwersQRSbJfQlUauCuK5N9d020PgZ0GVWFwIPAo6i1NYdv",
+      "object": "checkout.session",
+      "adaptive_pricing": {
+        "enabled": true
+      },
+      "after_expiration": null,
+      "allow_promotion_codes": null,
+      "amount_subtotal": 5595,
+      "amount_total": 5595,
+      "automatic_tax": {
+        "enabl | IP: 127.0.0.1
+[2025-11-06 11:33:29][INFO] ✅ Signature verified successfully | IP: 127.0.0.1
+[2025-11-06 11:33:29][INFO] 🔔 Stripe Event Received: checkout.session.completed | IP: 127.0.0.1
+[2025-11-06 11:33:29][INFO] ✅ Order Ref C1A9D3712166 marked as PAID — txn: pi_3SQLyqQTRirNEOsn1dFYW6kF, amount: 55.95, email: alfalf@gmail.com | IP: 127.0.0.1
+[2025-11-06 11:33:29][INFO] ✅ Webhook processed successfully — Event: checkout.session.completed | IP: 127.0.0.1
+[2025-11-06 11:34:24][INFO] ✅ Stripe webhook initialized | IP: 127.0.0.1
+[2025-11-06 11:34:24][INFO] 🌐 Webhook triggered from host: https://overfearfully-prius-ulises.ngrok-free.dev | IP: 127.0.0.1
+[2025-11-06 11:34:24][WARNING] ⚠️ Webhook received empty payload. Method: GET | IP: 127.0.0.1 | IP: 127.0.0.1
+[2025-11-06 11:34:42][INFO] 🛒 Checkout started — Total: 125.35 USD | IP: 127.0.0.1
+[2025-11-06 11:34:42][INFO] 🧾 Order 36 created (Ref: 921F7EBD3DBB, Payment: stripe) | IP: 127.0.0.1
+[2025-11-06 11:34:42][INFO] 🌐 Using base URL: https://overfearfully-prius-ulises.ngrok-free.dev/public | IP: 127.0.0.1
+[2025-11-06 11:34:42][INFO] 💳 Creating Stripe session for Order #36 | IP: 127.0.0.1
+[2025-11-06 11:34:43][INFO] ✅ Redirecting to Stripe checkout: https://checkout.stripe.com/c/pay/cs_test_a1NhAwLHw23NgFJoAeRctJHQJDIPSBWAHbo8R33bKgufLD9y4cGXZtxCUy#fidnandhYHdWcXxpYCc%2FJ2FgY2RwaXEnKSdkdWxOYHwnPyd1blpxYHZxWjA0VlQ3VmtUUVdsd0tASnZrTVdBVlBTfDN9TFVPf01SdW1wdWhxMGhkQjBTdmBqMEFCbVdcNF1ycW9IaF9XcW09UEBCPWtKSGJ1TElgak5WXF1sbzdpdEJ8NTU9f3x1czFfdycpJ2N3amhWYHdzYHcnP3F3cGApJ2dkZm5id2pwa2FGamlqdyc%2FJyZjY2NjY2MnKSdpZHxqcHFRfHVgJz8ndmxrYmlgWmxxYGgnKSdga2RnaWBVaWRmYG1qaWFgd3YnP3F3cGB4JSUl | IP: 127.0.0.1
+[2025-11-06 11:34:50][INFO] ✅ Stripe webhook initialized | IP: 127.0.0.1
+[2025-11-06 11:34:50][INFO] 🌐 Webhook triggered from host: https://overfearfully-prius-ulises.ngrok-free.dev | IP: 127.0.0.1
+[2025-11-06 11:34:50][INFO] 📬 Received Stripe event payload: {
+  "id": "evt_3SQMJQQTRirNEOsn1Jrv5Vio",
+  "object": "event",
+  "api_version": "2025-10-29.clover",
+  "created": 1762409089,
+  "data": {
+    "object": {
+      "id": "pi_3SQMJQQTRirNEOsn1AzBcR5N",
+      "object": "payment_intent",
+      "amount": 12535,
+      "amount_capturable": 0,
+      "amount_details": {
+        "tip": {}
+      },
+      "amount_received": 12535,
+      "application": null,
+      "application_fee_amount": null,
+      "automatic_payment_methods": null,
+      "canceled_at": null | IP: 127.0.0.1
+[2025-11-06 11:34:50][INFO] ✅ Stripe webhook initialized | IP: 127.0.0.1
+[2025-11-06 11:34:50][INFO] 🌐 Webhook triggered from host: https://overfearfully-prius-ulises.ngrok-free.dev | IP: 127.0.0.1
+[2025-11-06 11:34:50][INFO] 📬 Received Stripe event payload: {
+  "id": "evt_1SQMJRQTRirNEOsn1Bp1utOa",
+  "object": "event",
+  "api_version": "2025-10-29.clover",
+  "created": 1762409089,
+  "data": {
+    "object": {
+      "id": "cs_test_a1NhAwLHw23NgFJoAeRctJHQJDIPSBWAHbo8R33bKgufLD9y4cGXZtxCUy",
+      "object": "checkout.session",
+      "adaptive_pricing": {
+        "enabled": true
+      },
+      "after_expiration": null,
+      "allow_promotion_codes": null,
+      "amount_subtotal": 12535,
+      "amount_total": 12535,
+      "automatic_tax": {
+        "ena | IP: 127.0.0.1
+[2025-11-06 11:34:50][INFO] ✅ Signature verified successfully | IP: 127.0.0.1
+[2025-11-06 11:34:50][INFO] 🔔 Stripe Event Received: payment_intent.succeeded | IP: 127.0.0.1
+[2025-11-06 11:34:50][INFO] ℹ️ Unhandled event type: payment_intent.succeeded | IP: 127.0.0.1
+[2025-11-06 11:34:50][INFO] ✅ Webhook processed successfully — Event: payment_intent.succeeded | IP: 127.0.0.1
+[2025-11-06 11:34:50][INFO] ✅ Stripe webhook initialized | IP: 127.0.0.1
+[2025-11-06 11:34:50][INFO] 🌐 Webhook triggered from host: https://overfearfully-prius-ulises.ngrok-free.dev | IP: 127.0.0.1
+[2025-11-06 11:34:50][INFO] 📬 Received Stripe event payload: {
+  "id": "evt_3SQMJQQTRirNEOsn1tAizzTh",
+  "object": "event",
+  "api_version": "2025-10-29.clover",
+  "created": 1762409088,
+  "data": {
+    "object": {
+      "id": "pi_3SQMJQQTRirNEOsn1AzBcR5N",
+      "object": "payment_intent",
+      "amount": 12535,
+      "amount_capturable": 0,
+      "amount_details": {
+        "tip": {}
+      },
+      "amount_received": 0,
+      "application": null,
+      "application_fee_amount": null,
+      "automatic_payment_methods": null,
+      "canceled_at": null,
+   | IP: 127.0.0.1
+[2025-11-06 11:34:50][INFO] ✅ Signature verified successfully | IP: 127.0.0.1
+[2025-11-06 11:34:50][INFO] 🔔 Stripe Event Received: checkout.session.completed | IP: 127.0.0.1
+[2025-11-06 11:34:50][INFO] ✅ Order Ref 921F7EBD3DBB marked as PAID — txn: pi_3SQMJQQTRirNEOsn1AzBcR5N, amount: 125.35, email: alfalf@gmail.com | IP: 127.0.0.1
+[2025-11-06 11:34:50][INFO] ✅ Webhook processed successfully — Event: checkout.session.completed | IP: 127.0.0.1
+[2025-11-06 11:34:51][INFO] ✅ Signature verified successfully | IP: 127.0.0.1
+[2025-11-06 11:34:51][INFO] 🔔 Stripe Event Received: payment_intent.created | IP: 127.0.0.1
+[2025-11-06 11:34:51][INFO] ℹ️ Unhandled event type: payment_intent.created | IP: 127.0.0.1
+[2025-11-06 11:34:51][INFO] ✅ Webhook processed successfully — Event: payment_intent.created | IP: 127.0.0.1
+[2025-11-06 11:44:44][INFO] ✅ Stripe webhook initialized | IP: 127.0.0.1
+[2025-11-06 11:44:44][INFO] 🌐 Webhook triggered from host: https://overfearfully-prius-ulises.ngrok-free.dev | IP: 127.0.0.1
+[2025-11-06 11:44:44][WARNING] ⚠️ Webhook received empty payload. Method: GET | IP: 127.0.0.1 | IP: 127.0.0.1
+[2025-11-06 11:44:54][INFO] ✅ Stripe webhook initialized | IP: 127.0.0.1
+[2025-11-06 11:44:54][INFO] 🌐 Webhook triggered from host: https://overfearfully-prius-ulises.ngrok-free.dev | IP: 127.0.0.1
+[2025-11-06 11:44:54][INFO] 📬 Received Stripe event payload: {
+  "id": "evt_3SQLY0QTRirNEOsn0dViTQYf",
+  "object": "event",
+  "api_version": "2025-10-29.clover",
+  "created": 1762406148,
+  "data": {
+    "object": {
+      "id": "pi_3SQLY0QTRirNEOsn0lLZW0Em",
+      "object": "payment_intent",
+      "amount": 152399,
+      "amount_capturable": 0,
+      "amount_details": {
+        "tip": {}
+      },
+      "amount_received": 0,
+      "application": null,
+      "application_fee_amount": null,
+      "automatic_payment_methods": null,
+      "canceled_at": null,
+  | IP: 127.0.0.1
+[2025-11-06 11:44:54][INFO] ✅ Signature verified successfully | IP: 127.0.0.1
+[2025-11-06 11:44:54][INFO] 🔔 Stripe Event Received: payment_intent.created | IP: 127.0.0.1
+[2025-11-06 11:44:54][INFO] ℹ️ Unhandled event type: payment_intent.created | IP: 127.0.0.1
+[2025-11-06 11:44:54][INFO] ✅ Webhook processed successfully — Event: payment_intent.created | IP: 127.0.0.1
+[2025-11-06 11:44:59][INFO] 🛒 Checkout started — Total: 125.35 USD | IP: 127.0.0.1
+[2025-11-06 11:44:59][INFO] 🧾 Order 37 created (Ref: ECD10CB47AC7, Payment: stripe) | IP: 127.0.0.1
+[2025-11-06 11:44:59][INFO] 🌐 Using base URL: https://overfearfully-prius-ulises.ngrok-free.dev/public | IP: 127.0.0.1
+[2025-11-06 11:44:59][INFO] 💳 Creating Stripe session for Order #37 | IP: 127.0.0.1
+[2025-11-06 11:45:00][INFO] ✅ Stripe webhook initialized | IP: 127.0.0.1
+[2025-11-06 11:45:00][INFO] 🌐 Webhook triggered from host: https://overfearfully-prius-ulises.ngrok-free.dev | IP: 127.0.0.1
+[2025-11-06 11:45:00][INFO] 📬 Received Stripe event payload: {
+  "id": "evt_1SQLY2QTRirNEOsn5Bp91oAw",
+  "object": "event",
+  "api_version": "2025-10-29.clover",
+  "created": 1762406150,
+  "data": {
+    "object": {
+      "id": "cs_test_a1to6c4PoFtPw1rMQzVSDdZUMZiwT3KOFTg1rtm9JgAZwgcHx3vo4BJfTN",
+      "object": "checkout.session",
+      "adaptive_pricing": {
+        "enabled": true
+      },
+      "after_expiration": null,
+      "allow_promotion_codes": null,
+      "amount_subtotal": 152399,
+      "amount_total": 152399,
+      "automatic_tax": {
+        "e | IP: 127.0.0.1
+[2025-11-06 11:45:00][INFO] ✅ Signature verified successfully | IP: 127.0.0.1
+[2025-11-06 11:45:00][INFO] 🔔 Stripe Event Received: checkout.session.completed | IP: 127.0.0.1
+[2025-11-06 11:45:00][INFO] ✅ Order Ref B7AEC61C1DA2 marked as PAID — txn: pi_3SQLY0QTRirNEOsn0lLZW0Em, amount: 1523.99, email: alfalf@gmail.com | IP: 127.0.0.1
+[2025-11-06 11:45:00][INFO] ✅ Webhook processed successfully — Event: checkout.session.completed | IP: 127.0.0.1
+[2025-11-06 11:45:00][INFO] ✅ Redirecting to Stripe checkout: https://checkout.stripe.com/c/pay/cs_test_a1Ds2aMlaKdqejTsZnBCus1tTQywVJLDdfymbEGZ2tvMdRsPbQ0sonjhu2#fidnandhYHdWcXxpYCc%2FJ2FgY2RwaXEnKSdkdWxOYHwnPyd1blpxYHZxWjA0VlQ3VmtUUVdsd0tASnZrTVdBVlBTfDN9TFVPf01SdW1wdWhxMGhkQjBTdmBqMEFCbVdcNF1ycW9IaF9XcW09UEBCPWtKSGJ1TElgak5WXF1sbzdpdEJ8NTU9f3x1czFfdycpJ2N3amhWYHdzYHcnP3F3cGApJ2dkZm5id2pwa2FGamlqdyc%2FJyZjY2NjY2MnKSdpZHxqcHFRfHVgJz8ndmxrYmlgWmxxYGgnKSdga2RnaWBVaWRmYG1qaWFgd3YnP3F3cGB4JSUl | IP: 127.0.0.1
+[2025-11-06 11:45:40][INFO] ✅ Stripe webhook initialized | IP: 127.0.0.1
+[2025-11-06 11:45:40][INFO] 🌐 Webhook triggered from host: https://overfearfully-prius-ulises.ngrok-free.dev | IP: 127.0.0.1
+[2025-11-06 11:45:40][INFO] 📬 Received Stripe event payload: {
+  "id": "evt_3SQMTuQTRirNEOsn0FCidc0v",
+  "object": "event",
+  "api_version": "2025-10-29.clover",
+  "created": 1762409739,
+  "data": {
+    "object": {
+      "id": "pi_3SQMTuQTRirNEOsn0IGovY2T",
+      "object": "payment_intent",
+      "amount": 12535,
+      "amount_capturable": 0,
+      "amount_details": {
+        "tip": {}
+      },
+      "amount_received": 12535,
+      "application": null,
+      "application_fee_amount": null,
+      "automatic_payment_methods": null,
+      "canceled_at": null | IP: 127.0.0.1
+[2025-11-06 11:45:40][INFO] ✅ Stripe webhook initialized | IP: 127.0.0.1
+[2025-11-06 11:45:40][INFO] 🌐 Webhook triggered from host: https://overfearfully-prius-ulises.ngrok-free.dev | IP: 127.0.0.1
+[2025-11-06 11:45:40][INFO] 📬 Received Stripe event payload: {
+  "id": "evt_1SQMTvQTRirNEOsnrWczv64l",
+  "object": "event",
+  "api_version": "2025-10-29.clover",
+  "created": 1762409739,
+  "data": {
+    "object": {
+      "id": "cs_test_a1Ds2aMlaKdqejTsZnBCus1tTQywVJLDdfymbEGZ2tvMdRsPbQ0sonjhu2",
+      "object": "checkout.session",
+      "adaptive_pricing": {
+        "enabled": true
+      },
+      "after_expiration": null,
+      "allow_promotion_codes": null,
+      "amount_subtotal": 12535,
+      "amount_total": 12535,
+      "automatic_tax": {
+        "ena | IP: 127.0.0.1
+[2025-11-06 11:45:40][INFO] ✅ Signature verified successfully | IP: 127.0.0.1
+[2025-11-06 11:45:40][INFO] 🔔 Stripe Event Received: payment_intent.succeeded | IP: 127.0.0.1
+[2025-11-06 11:45:40][INFO] ℹ️ Unhandled event type: payment_intent.succeeded | IP: 127.0.0.1
+[2025-11-06 11:45:40][INFO] ✅ Webhook processed successfully — Event: payment_intent.succeeded | IP: 127.0.0.1
+[2025-11-06 11:45:40][INFO] ✅ Stripe webhook initialized | IP: 127.0.0.1
+[2025-11-06 11:45:40][INFO] 🌐 Webhook triggered from host: https://overfearfully-prius-ulises.ngrok-free.dev | IP: 127.0.0.1
+[2025-11-06 11:45:40][INFO] 📬 Received Stripe event payload: {
+  "id": "evt_3SQMTuQTRirNEOsn0alY03Zn",
+  "object": "event",
+  "api_version": "2025-10-29.clover",
+  "created": 1762409738,
+  "data": {
+    "object": {
+      "id": "pi_3SQMTuQTRirNEOsn0IGovY2T",
+      "object": "payment_intent",
+      "amount": 12535,
+      "amount_capturable": 0,
+      "amount_details": {
+        "tip": {}
+      },
+      "amount_received": 0,
+      "application": null,
+      "application_fee_amount": null,
+      "automatic_payment_methods": null,
+      "canceled_at": null,
+   | IP: 127.0.0.1
+[2025-11-06 11:45:40][INFO] ✅ Signature verified successfully | IP: 127.0.0.1
+[2025-11-06 11:45:40][INFO] 🔔 Stripe Event Received: checkout.session.completed | IP: 127.0.0.1
+[2025-11-06 11:45:40][INFO] ✅ Order Ref ECD10CB47AC7 marked as PAID — txn: pi_3SQMTuQTRirNEOsn0IGovY2T, amount: 125.35, email: alfalf@gmail.com | IP: 127.0.0.1
+[2025-11-06 11:45:40][INFO] ✅ Webhook processed successfully — Event: checkout.session.completed | IP: 127.0.0.1
+[2025-11-06 11:45:40][INFO] ✅ Signature verified successfully | IP: 127.0.0.1
+[2025-11-06 11:45:40][INFO] 🔔 Stripe Event Received: payment_intent.created | IP: 127.0.0.1
+[2025-11-06 11:45:40][INFO] ℹ️ Unhandled event type: payment_intent.created | IP: 127.0.0.1
+[2025-11-06 11:45:40][INFO] ✅ Webhook processed successfully — Event: payment_intent.created | IP: 127.0.0.1
+[2025-11-06 11:45:49][INFO] ✅ Stripe webhook initialized | IP: 127.0.0.1
+[2025-11-06 11:45:49][INFO] 🌐 Webhook triggered from host: https://overfearfully-prius-ulises.ngrok-free.dev | IP: 127.0.0.1
+[2025-11-06 11:45:49][INFO] 📬 Received Stripe event payload: {
+  "id": "evt_3SQLY0QTRirNEOsn0AnTTSh1",
+  "object": "event",
+  "api_version": "2025-10-29.clover",
+  "created": 1762406149,
+  "data": {
+    "object": {
+      "id": "pi_3SQLY0QTRirNEOsn0lLZW0Em",
+      "object": "payment_intent",
+      "amount": 152399,
+      "amount_capturable": 0,
+      "amount_details": {
+        "tip": {}
+      },
+      "amount_received": 152399,
+      "application": null,
+      "application_fee_amount": null,
+      "automatic_payment_methods": null,
+      "canceled_at": nu | IP: 127.0.0.1
+[2025-11-06 11:45:49][INFO] ✅ Signature verified successfully | IP: 127.0.0.1
+[2025-11-06 11:45:49][INFO] 🔔 Stripe Event Received: payment_intent.succeeded | IP: 127.0.0.1
+[2025-11-06 11:45:49][INFO] ℹ️ Unhandled event type: payment_intent.succeeded | IP: 127.0.0.1
+[2025-11-06 11:45:49][INFO] ✅ Webhook processed successfully — Event: payment_intent.succeeded | IP: 127.0.0.1
+[2025-11-06 11:47:16][INFO] 🛒 Checkout started — Total: 58.92 USD | IP: 127.0.0.1
+[2025-11-06 11:47:16][INFO] 🧾 Order 38 created (Ref: 3EEE3476059F, Payment: stripe) | IP: 127.0.0.1
+[2025-11-06 11:47:16][INFO] 🌐 Using base URL: https://overfearfully-prius-ulises.ngrok-free.dev/public | IP: 127.0.0.1
+[2025-11-06 11:47:16][INFO] 💳 Creating Stripe session for Order #38 | IP: 127.0.0.1
+[2025-11-06 11:47:17][INFO] ✅ Redirecting to Stripe checkout: https://checkout.stripe.com/c/pay/cs_test_a1BSlQnjuPTUPybKIS7FTihNdXH1XqiqcZzNU1VpHj1kewuG33lzTOUokR#fidnandhYHdWcXxpYCc%2FJ2FgY2RwaXEnKSdkdWxOYHwnPyd1blpxYHZxWjA0VlQ3VmtUUVdsd0tASnZrTVdBVlBTfDN9TFVPf01SdW1wdWhxMGhkQjBTdmBqMEFCbVdcNF1ycW9IaF9XcW09UEBCPWtKSGJ1TElgak5WXF1sbzdpdEJ8NTU9f3x1czFfdycpJ2N3amhWYHdzYHcnP3F3cGApJ2dkZm5id2pwa2FGamlqdyc%2FJyZjY2NjY2MnKSdpZHxqcHFRfHVgJz8ndmxrYmlgWmxxYGgnKSdga2RnaWBVaWRmYG1qaWFgd3YnP3F3cGB4JSUl | IP: 127.0.0.1
+[2025-11-06 11:47:24][INFO] ✅ Stripe webhook initialized | IP: 127.0.0.1
+[2025-11-06 11:47:24][INFO] 🌐 Webhook triggered from host: https://overfearfully-prius-ulises.ngrok-free.dev | IP: 127.0.0.1
+[2025-11-06 11:47:24][INFO] 📬 Received Stripe event payload: {
+  "id": "evt_1SQMVbQTRirNEOsnvbXGmzau",
+  "object": "event",
+  "api_version": "2025-10-29.clover",
+  "created": 1762409843,
+  "data": {
+    "object": {
+      "id": "cs_test_a1BSlQnjuPTUPybKIS7FTihNdXH1XqiqcZzNU1VpHj1kewuG33lzTOUokR",
+      "object": "checkout.session",
+      "adaptive_pricing": {
+        "enabled": true
+      },
+      "after_expiration": null,
+      "allow_promotion_codes": null,
+      "amount_subtotal": 5892,
+      "amount_total": 5892,
+      "automatic_tax": {
+        "enabl | IP: 127.0.0.1
+[2025-11-06 11:47:24][INFO] ✅ Stripe webhook initialized | IP: 127.0.0.1
+[2025-11-06 11:47:24][INFO] 🌐 Webhook triggered from host: https://overfearfully-prius-ulises.ngrok-free.dev | IP: 127.0.0.1
+[2025-11-06 11:47:24][INFO] 📬 Received Stripe event payload: {
+  "id": "evt_3SQMVaQTRirNEOsn13JnLu3z",
+  "object": "event",
+  "api_version": "2025-10-29.clover",
+  "created": 1762409843,
+  "data": {
+    "object": {
+      "id": "pi_3SQMVaQTRirNEOsn1p1MHV9L",
+      "object": "payment_intent",
+      "amount": 5892,
+      "amount_capturable": 0,
+      "amount_details": {
+        "tip": {}
+      },
+      "amount_received": 5892,
+      "application": null,
+      "application_fee_amount": null,
+      "automatic_payment_methods": null,
+      "canceled_at": null,
+ | IP: 127.0.0.1
+[2025-11-06 11:47:24][INFO] ✅ Signature verified successfully | IP: 127.0.0.1
+[2025-11-06 11:47:24][INFO] 🔔 Stripe Event Received: checkout.session.completed | IP: 127.0.0.1
+[2025-11-06 11:47:24][INFO] ✅ Order Ref 3EEE3476059F marked as PAID — txn: pi_3SQMVaQTRirNEOsn1p1MHV9L, amount: 58.92, email: alfalf@gmail.com | IP: 127.0.0.1
+[2025-11-06 11:47:24][INFO] ✅ Webhook processed successfully — Event: checkout.session.completed | IP: 127.0.0.1
+[2025-11-06 11:47:24][INFO] ✅ Stripe webhook initialized | IP: 127.0.0.1
+[2025-11-06 11:47:24][INFO] 🌐 Webhook triggered from host: https://overfearfully-prius-ulises.ngrok-free.dev | IP: 127.0.0.1
+[2025-11-06 11:47:24][INFO] 📬 Received Stripe event payload: {
+  "id": "evt_3SQMVaQTRirNEOsn1N8gUciL",
+  "object": "event",
+  "api_version": "2025-10-29.clover",
+  "created": 1762409842,
+  "data": {
+    "object": {
+      "id": "pi_3SQMVaQTRirNEOsn1p1MHV9L",
+      "object": "payment_intent",
+      "amount": 5892,
+      "amount_capturable": 0,
+      "amount_details": {
+        "tip": {}
+      },
+      "amount_received": 0,
+      "application": null,
+      "application_fee_amount": null,
+      "automatic_payment_methods": null,
+      "canceled_at": null,
+    | IP: 127.0.0.1
+[2025-11-06 11:47:24][INFO] ✅ Signature verified successfully | IP: 127.0.0.1
+[2025-11-06 11:47:24][INFO] 🔔 Stripe Event Received: payment_intent.succeeded | IP: 127.0.0.1
+[2025-11-06 11:47:24][INFO] ℹ️ Unhandled event type: payment_intent.succeeded | IP: 127.0.0.1
+[2025-11-06 11:47:24][INFO] ✅ Webhook processed successfully — Event: payment_intent.succeeded | IP: 127.0.0.1
+[2025-11-06 11:47:24][INFO] ✅ Signature verified successfully | IP: 127.0.0.1
+[2025-11-06 11:47:24][INFO] 🔔 Stripe Event Received: payment_intent.created | IP: 127.0.0.1
+[2025-11-06 11:47:24][INFO] ℹ️ Unhandled event type: payment_intent.created | IP: 127.0.0.1
+[2025-11-06 11:47:24][INFO] ✅ Webhook processed successfully — Event: payment_intent.created | IP: 127.0.0.1
+[2025-11-06 12:02:55][INFO] ✅ Stripe webhook initialized | IP: 127.0.0.1
+[2025-11-06 12:02:55][INFO] 🌐 Webhook triggered from host: https://overfearfully-prius-ulises.ngrok-free.dev | IP: 127.0.0.1
+[2025-11-06 12:02:55][INFO] 📬 Received Stripe event payload: {
+  "id": "evt_1SQLpFQTRirNEOsnTd6KyqHK",
+  "object": "event",
+  "api_version": "2025-10-29.clover",
+  "created": 1762407217,
+  "data": {
+    "object": {
+      "id": "cs_test_a1oEna0ayyoBxvkP6UuyisK0mukLL4WuR7Wx9GdKV3MizvzmJVRD9dpqd5",
+      "object": "checkout.session",
+      "adaptive_pricing": {
+        "enabled": true
+      },
+      "after_expiration": null,
+      "allow_promotion_codes": null,
+      "amount_subtotal": 15000,
+      "amount_total": 15000,
+      "automatic_tax": {
+        "ena | IP: 127.0.0.1
+[2025-11-06 12:02:55][INFO] ✅ Signature verified successfully | IP: 127.0.0.1
+[2025-11-06 12:02:55][INFO] 🔔 Stripe Event Received: checkout.session.completed | IP: 127.0.0.1
+[2025-11-06 12:02:55][INFO] ✅ Order Ref 53DD35D87536 marked as PAID — txn: pi_3SQLpEQTRirNEOsn1g6hb0Dp, amount: 150, email: alfalf@gmail.com | IP: 127.0.0.1
+[2025-11-06 12:02:55][INFO] ✅ Webhook processed successfully — Event: checkout.session.completed | IP: 127.0.0.1
+[2025-11-06 12:03:09][INFO] ✅ Stripe webhook initialized | IP: 127.0.0.1
+[2025-11-06 12:03:09][INFO] 🌐 Webhook triggered from host: https://overfearfully-prius-ulises.ngrok-free.dev | IP: 127.0.0.1
+[2025-11-06 12:03:09][INFO] 📬 Received Stripe event payload: {
+  "id": "evt_3SQLpEQTRirNEOsn1kL0iHJQ",
+  "object": "event",
+  "api_version": "2025-10-29.clover",
+  "created": 1762407217,
+  "data": {
+    "object": {
+      "id": "pi_3SQLpEQTRirNEOsn1g6hb0Dp",
+      "object": "payment_intent",
+      "amount": 15000,
+      "amount_capturable": 0,
+      "amount_details": {
+        "tip": {}
+      },
+      "amount_received": 15000,
+      "application": null,
+      "application_fee_amount": null,
+      "automatic_payment_methods": null,
+      "canceled_at": null | IP: 127.0.0.1
+[2025-11-06 12:03:09][INFO] ✅ Signature verified successfully | IP: 127.0.0.1
+[2025-11-06 12:03:09][INFO] 🔔 Stripe Event Received: payment_intent.succeeded | IP: 127.0.0.1
+[2025-11-06 12:03:09][INFO] ℹ️ Unhandled event type: payment_intent.succeeded | IP: 127.0.0.1
+[2025-11-06 12:03:09][INFO] ✅ Webhook processed successfully — Event: payment_intent.succeeded | IP: 127.0.0.1
+[2025-11-06 12:04:23][INFO] ✅ Stripe webhook initialized | IP: 127.0.0.1
+[2025-11-06 12:04:23][INFO] 🌐 Webhook triggered from host: https://overfearfully-prius-ulises.ngrok-free.dev | IP: 127.0.0.1
+[2025-11-06 12:04:23][INFO] 📬 Received Stripe event payload: {
+  "id": "evt_3SQLpEQTRirNEOsn1AEP3JtQ",
+  "object": "event",
+  "api_version": "2025-10-29.clover",
+  "created": 1762407216,
+  "data": {
+    "object": {
+      "id": "pi_3SQLpEQTRirNEOsn1g6hb0Dp",
+      "object": "payment_intent",
+      "amount": 15000,
+      "amount_capturable": 0,
+      "amount_details": {
+        "tip": {}
+      },
+      "amount_received": 0,
+      "application": null,
+      "application_fee_amount": null,
+      "automatic_payment_methods": null,
+      "canceled_at": null,
+   | IP: 127.0.0.1
+[2025-11-06 12:04:23][INFO] ✅ Signature verified successfully | IP: 127.0.0.1
+[2025-11-06 12:04:23][INFO] 🔔 Stripe Event Received: payment_intent.created | IP: 127.0.0.1
+[2025-11-06 12:04:23][INFO] ℹ️ Unhandled event type: payment_intent.created | IP: 127.0.0.1
+[2025-11-06 12:04:23][INFO] ✅ Webhook processed successfully — Event: payment_intent.created | IP: 127.0.0.1
+[2025-11-06 12:04:40][INFO] 🛒 Checkout started — Total: 3072.56 USD | IP: 127.0.0.1
+[2025-11-06 12:04:40][INFO] 🧾 Order 39 created (Ref: 67AC04182C65, Payment: stripe) | IP: 127.0.0.1
+[2025-11-06 12:04:40][INFO] 🌐 Using base URL: http://chandusoft.test | IP: 127.0.0.1
+[2025-11-06 12:04:40][INFO] 💳 Creating Stripe session for Order #39 | IP: 127.0.0.1
+[2025-11-06 12:04:41][INFO] ✅ Redirecting to Stripe checkout: https://checkout.stripe.com/c/pay/cs_test_b1tkiETZFUJ9Vp6ug6IXUwX6wRktItKapbZF1S6vgi25RZKaKdkpX8yccg#fidnandhYHdWcXxpYCc%2FJ2FgY2RwaXEnKSdkdWxOYHwnPyd1blpxYHZxWjA0VlQ3VmtUUVdsd0tASnZrTVdBVlBTfDN9TFVPf01SdW1wdWhxMGhkQjBTdmBqMEFCbVdcNF1ycW9IaF9XcW09UEBCPWtKSGJ1TElgak5WXF1sbzdpdEJ8NTU9f3x1czFfdycpJ2N3amhWYHdzYHcnP3F3cGApJ2dkZm5id2pwa2FGamlqdyc%2FJyZjY2NjY2MnKSdpZHxqcHFRfHVgJz8naHBpcWxabHFgaCcpJ2BrZGdpYFVpZGZgbWppYWB3dic%2FcXdwYHgl | IP: 127.0.0.1
+[2025-11-06 12:04:49][INFO] ✅ Stripe webhook initialized | IP: 127.0.0.1
+[2025-11-06 12:04:49][INFO] 🌐 Webhook triggered from host: https://overfearfully-prius-ulises.ngrok-free.dev | IP: 127.0.0.1
+[2025-11-06 12:04:49][INFO] 📬 Received Stripe event payload: {
+  "id": "evt_3SQMmRQTRirNEOsn1DxRTQ2p",
+  "object": "event",
+  "api_version": "2025-10-29.clover",
+  "created": 1762410887,
+  "data": {
+    "object": {
+      "id": "pi_3SQMmRQTRirNEOsn13iM6zF9",
+      "object": "payment_intent",
+      "amount": 307256,
+      "amount_capturable": 0,
+      "amount_details": {
+        "tip": {}
+      },
+      "amount_received": 307256,
+      "application": null,
+      "application_fee_amount": null,
+      "automatic_payment_methods": null,
+      "canceled_at": nu | IP: 127.0.0.1
+[2025-11-06 12:04:49][INFO] ✅ Stripe webhook initialized | IP: 127.0.0.1
+[2025-11-06 12:04:49][INFO] 🌐 Webhook triggered from host: https://overfearfully-prius-ulises.ngrok-free.dev | IP: 127.0.0.1
+[2025-11-06 12:04:49][INFO] 📬 Received Stripe event payload: {
+  "id": "evt_1SQMmSQTRirNEOsnOWhLLDNG",
+  "object": "event",
+  "api_version": "2025-10-29.clover",
+  "created": 1762410888,
+  "data": {
+    "object": {
+      "id": "cs_test_b1tkiETZFUJ9Vp6ug6IXUwX6wRktItKapbZF1S6vgi25RZKaKdkpX8yccg",
+      "object": "checkout.session",
+      "adaptive_pricing": {
+        "enabled": true
+      },
+      "after_expiration": null,
+      "allow_promotion_codes": null,
+      "amount_subtotal": 307256,
+      "amount_total": 307256,
+      "automatic_tax": {
+        "e | IP: 127.0.0.1
+[2025-11-06 12:04:49][INFO] ✅ Signature verified successfully | IP: 127.0.0.1
+[2025-11-06 12:04:49][INFO] 🔔 Stripe Event Received: payment_intent.succeeded | IP: 127.0.0.1
+[2025-11-06 12:04:49][INFO] ℹ️ Unhandled event type: payment_intent.succeeded | IP: 127.0.0.1
+[2025-11-06 12:04:49][INFO] ✅ Webhook processed successfully — Event: payment_intent.succeeded | IP: 127.0.0.1
+[2025-11-06 12:04:49][INFO] ✅ Stripe webhook initialized | IP: 127.0.0.1
+[2025-11-06 12:04:49][INFO] 🌐 Webhook triggered from host: https://overfearfully-prius-ulises.ngrok-free.dev | IP: 127.0.0.1
+[2025-11-06 12:04:49][INFO] 📬 Received Stripe event payload: {
+  "id": "evt_3SQMmRQTRirNEOsn10UkPnQ1",
+  "object": "event",
+  "api_version": "2025-10-29.clover",
+  "created": 1762410887,
+  "data": {
+    "object": {
+      "id": "pi_3SQMmRQTRirNEOsn13iM6zF9",
+      "object": "payment_intent",
+      "amount": 307256,
+      "amount_capturable": 0,
+      "amount_details": {
+        "tip": {}
+      },
+      "amount_received": 0,
+      "application": null,
+      "application_fee_amount": null,
+      "automatic_payment_methods": null,
+      "canceled_at": null,
+  | IP: 127.0.0.1
+[2025-11-06 12:04:49][INFO] ✅ Signature verified successfully | IP: 127.0.0.1
+[2025-11-06 12:04:49][INFO] 🔔 Stripe Event Received: checkout.session.completed | IP: 127.0.0.1
+[2025-11-06 12:04:49][INFO] ✅ Order Ref 67AC04182C65 marked as PAID — txn: pi_3SQMmRQTRirNEOsn13iM6zF9, amount: 3072.56, email: alfalf@gmail.com | IP: 127.0.0.1
+[2025-11-06 12:04:49][INFO] ✅ Webhook processed successfully — Event: checkout.session.completed | IP: 127.0.0.1
+[2025-11-06 12:04:49][INFO] ✅ Signature verified successfully | IP: 127.0.0.1
+[2025-11-06 12:04:49][INFO] 🔔 Stripe Event Received: payment_intent.created | IP: 127.0.0.1
+[2025-11-06 12:04:49][INFO] ℹ️ Unhandled event type: payment_intent.created | IP: 127.0.0.1
+[2025-11-06 12:04:49][INFO] ✅ Webhook processed successfully — Event: payment_intent.created | IP: 127.0.0.1
+[2025-11-06 12:13:14][INFO] ✅ Stripe webhook initialized | IP: 127.0.0.1
+[2025-11-06 12:13:14][INFO] 🌐 Webhook triggered from host: https://overfearfully-prius-ulises.ngrok-free.dev | IP: 127.0.0.1
+[2025-11-06 12:13:14][INFO] 📬 Received Stripe event payload: {
+  "id": "evt_1SQLyrQTRirNEOsnx69bQf2P",
+  "object": "event",
+  "api_version": "2025-10-29.clover",
+  "created": 1762407813,
+  "data": {
+    "object": {
+      "id": "cs_test_a1pS8Q8FY3jKXwersQRSbJfQlUauCuK5N9d020PgZ0GVWFwIPAo6i1NYdv",
+      "object": "checkout.session",
+      "adaptive_pricing": {
+        "enabled": true
+      },
+      "after_expiration": null,
+      "allow_promotion_codes": null,
+      "amount_subtotal": 5595,
+      "amount_total": 5595,
+      "automatic_tax": {
+        "enabl | IP: 127.0.0.1
+[2025-11-06 12:13:14][INFO] ✅ Signature verified successfully | IP: 127.0.0.1
+[2025-11-06 12:13:14][INFO] 🔔 Stripe Event Received: checkout.session.completed | IP: 127.0.0.1
+[2025-11-06 12:13:14][INFO] ✅ Order Ref C1A9D3712166 marked as PAID — txn: pi_3SQLyqQTRirNEOsn1dFYW6kF, amount: 55.95, email: alfalf@gmail.com | IP: 127.0.0.1
+[2025-11-06 12:13:14][INFO] ✅ Webhook processed successfully — Event: checkout.session.completed | IP: 127.0.0.1
+[2025-11-06 12:13:16][INFO] ✅ Stripe webhook initialized | IP: 127.0.0.1
+[2025-11-06 12:13:16][INFO] 🌐 Webhook triggered from host: https://overfearfully-prius-ulises.ngrok-free.dev | IP: 127.0.0.1
+[2025-11-06 12:13:16][INFO] 📬 Received Stripe event payload: {
+  "id": "evt_3SQLyqQTRirNEOsn1a6gI7EJ",
+  "object": "event",
+  "api_version": "2025-10-29.clover",
+  "created": 1762407812,
+  "data": {
+    "object": {
+      "id": "pi_3SQLyqQTRirNEOsn1dFYW6kF",
+      "object": "payment_intent",
+      "amount": 5595,
+      "amount_capturable": 0,
+      "amount_details": {
+        "tip": {}
+      },
+      "amount_received": 0,
+      "application": null,
+      "application_fee_amount": null,
+      "automatic_payment_methods": null,
+      "canceled_at": null,
+    | IP: 127.0.0.1
+[2025-11-06 12:13:16][INFO] ✅ Signature verified successfully | IP: 127.0.0.1
+[2025-11-06 12:13:16][INFO] 🔔 Stripe Event Received: payment_intent.created | IP: 127.0.0.1
+[2025-11-06 12:13:16][INFO] ℹ️ Unhandled event type: payment_intent.created | IP: 127.0.0.1
+[2025-11-06 12:13:16][INFO] ✅ Webhook processed successfully — Event: payment_intent.created | IP: 127.0.0.1
+[2025-11-06 12:13:27][INFO] ✅ Stripe webhook initialized | IP: 127.0.0.1
+[2025-11-06 12:13:27][INFO] 🌐 Webhook triggered from host: https://overfearfully-prius-ulises.ngrok-free.dev | IP: 127.0.0.1
+[2025-11-06 12:13:27][INFO] 📬 Received Stripe event payload: {
+  "id": "evt_3SQLyqQTRirNEOsn1RGPl1tT",
+  "object": "event",
+  "api_version": "2025-10-29.clover",
+  "created": 1762407813,
+  "data": {
+    "object": {
+      "id": "pi_3SQLyqQTRirNEOsn1dFYW6kF",
+      "object": "payment_intent",
+      "amount": 5595,
+      "amount_capturable": 0,
+      "amount_details": {
+        "tip": {}
+      },
+      "amount_received": 5595,
+      "application": null,
+      "application_fee_amount": null,
+      "automatic_payment_methods": null,
+      "canceled_at": null,
+ | IP: 127.0.0.1
+[2025-11-06 12:13:27][INFO] ✅ Signature verified successfully | IP: 127.0.0.1
+[2025-11-06 12:13:27][INFO] 🔔 Stripe Event Received: payment_intent.succeeded | IP: 127.0.0.1
+[2025-11-06 12:13:27][INFO] ℹ️ Unhandled event type: payment_intent.succeeded | IP: 127.0.0.1
+[2025-11-06 12:13:27][INFO] ✅ Webhook processed successfully — Event: payment_intent.succeeded | IP: 127.0.0.1
+[2025-11-06 12:40:59][INFO] ✅ Stripe webhook initialized | IP: 127.0.0.1
+[2025-11-06 12:40:59][INFO] 🌐 Webhook triggered from host: https://overfearfully-prius-ulises.ngrok-free.dev | IP: 127.0.0.1
+[2025-11-06 12:40:59][INFO] 📬 Received Stripe event payload: {
+  "id": "evt_1SQMVbQTRirNEOsnvbXGmzau",
+  "object": "event",
+  "api_version": "2025-10-29.clover",
+  "created": 1762409843,
+  "data": {
+    "object": {
+      "id": "cs_test_a1BSlQnjuPTUPybKIS7FTihNdXH1XqiqcZzNU1VpHj1kewuG33lzTOUokR",
+      "object": "checkout.session",
+      "adaptive_pricing": {
+        "enabled": true
+      },
+      "after_expiration": null,
+      "allow_promotion_codes": null,
+      "amount_subtotal": 5892,
+      "amount_total": 5892,
+      "automatic_tax": {
+        "enabl | IP: 127.0.0.1
+[2025-11-06 12:40:59][INFO] ✅ Signature verified successfully | IP: 127.0.0.1
+[2025-11-06 12:40:59][INFO] 🔔 Stripe Event Received: checkout.session.completed | IP: 127.0.0.1
+[2025-11-06 12:40:59][INFO] ✅ Order Ref 3EEE3476059F marked as PAID — txn: pi_3SQMVaQTRirNEOsn1p1MHV9L, amount: 58.92, email: alfalf@gmail.com | IP: 127.0.0.1
+[2025-11-06 12:40:59][INFO] ✅ Webhook processed successfully — Event: checkout.session.completed | IP: 127.0.0.1
+[2025-11-06 12:50:54][INFO] ✅ Stripe webhook initialized | IP: 127.0.0.1
+[2025-11-06 12:50:54][INFO] 🌐 Webhook triggered from host: https://overfearfully-prius-ulises.ngrok-free.dev | IP: 127.0.0.1
+[2025-11-06 12:50:54][INFO] 📬 Received Stripe event payload: {
+  "id": "evt_3SQKhzQTRirNEOsn084THXwP",
+  "object": "event",
+  "api_version": "2025-10-29.clover",
+  "created": 1762402924,
+  "data": {
+    "object": {
+      "id": "pi_3SQKhzQTRirNEOsn0yGabgT6",
+      "object": "payment_intent",
+      "amount": 152399,
+      "amount_capturable": 0,
+      "amount_details": {
+        "tip": {}
+      },
+      "amount_received": 152399,
+      "application": null,
+      "application_fee_amount": null,
+      "automatic_payment_methods": null,
+      "canceled_at": nu | IP: 127.0.0.1
+[2025-11-06 12:50:54][INFO] ✅ Signature verified successfully | IP: 127.0.0.1
+[2025-11-06 12:50:54][INFO] 🔔 Stripe Event Received: payment_intent.succeeded | IP: 127.0.0.1
+[2025-11-06 12:50:54][INFO] ℹ️ Unhandled event type: payment_intent.succeeded | IP: 127.0.0.1
+[2025-11-06 12:50:54][INFO] ✅ Webhook processed successfully — Event: payment_intent.succeeded | IP: 127.0.0.1
+[2025-11-06 13:21:10][INFO] 🛒 Checkout started — Total: 3047.98 USD | IP: 127.0.0.1
+[2025-11-06 13:21:10][INFO] 🧾 Order 40 created (Ref: 8B00894FF9D7, Payment: stripe) | IP: 127.0.0.1
+[2025-11-06 13:21:10][INFO] 🌐 Using base URL: https://overfearfully-prius-ulises.ngrok-free.dev/public | IP: 127.0.0.1
+[2025-11-06 13:21:10][INFO] 💳 Creating Stripe session for Order #40 | IP: 127.0.0.1
+[2025-11-06 13:21:11][INFO] ✅ Redirecting to Stripe checkout: https://checkout.stripe.com/c/pay/cs_test_a1fQGPLYxEMGHybUUvBAc4YQ8D8WXE8KaWdg2gCR1fmeqycOXPPq5fBUOJ#fidnandhYHdWcXxpYCc%2FJ2FgY2RwaXEnKSdkdWxOYHwnPyd1blpxYHZxWjA0VlQ3VmtUUVdsd0tASnZrTVdBVlBTfDN9TFVPf01SdW1wdWhxMGhkQjBTdmBqMEFCbVdcNF1ycW9IaF9XcW09UEBCPWtKSGJ1TElgak5WXF1sbzdpdEJ8NTU9f3x1czFfdycpJ2N3amhWYHdzYHcnP3F3cGApJ2dkZm5id2pwa2FGamlqdyc%2FJyZjY2NjY2MnKSdpZHxqcHFRfHVgJz8ndmxrYmlgWmxxYGgnKSdga2RnaWBVaWRmYG1qaWFgd3YnP3F3cGB4JSUl | IP: 127.0.0.1
+[2025-11-06 13:21:21][INFO] ✅ Stripe webhook initialized | IP: 127.0.0.1 | IP: 127.0.0.1
+[2025-11-06 13:21:21][INFO] 🌐 Webhook triggered from host: http://overfearfully-prius-ulises.ngrok-free.dev | IP: 127.0.0.1
+[2025-11-06 13:21:22][INFO] ✅ Stripe webhook initialized | IP: 127.0.0.1 | IP: 127.0.0.1
+[2025-11-06 13:21:22][INFO] ✅ Stripe webhook initialized | IP: 127.0.0.1 | IP: 127.0.0.1
+[2025-11-06 13:21:22][INFO] 🌐 Webhook triggered from host: http://overfearfully-prius-ulises.ngrok-free.dev | IP: 127.0.0.1
+[2025-11-06 13:21:22][INFO] 🌐 Webhook triggered from host: http://overfearfully-prius-ulises.ngrok-free.dev | IP: 127.0.0.1
+[2025-11-06 13:21:22][INFO] ✅ Stripe signature verified successfully | IP: 127.0.0.1
+[2025-11-06 13:21:22][INFO] 🔔 Stripe Event Received: payment_intent.succeeded | IP: 127.0.0.1
+[2025-11-06 13:21:22][INFO] ℹ️ Unhandled event type: payment_intent.succeeded | IP: 127.0.0.1
+[2025-11-06 13:21:22][INFO] ✅ Webhook processed successfully — Event: payment_intent.succeeded | IP: 127.0.0.1
+[2025-11-06 13:21:22][INFO] ✅ Stripe signature verified successfully | IP: 127.0.0.1
+[2025-11-06 13:21:22][INFO] 🔔 Stripe Event Received: payment_intent.created | IP: 127.0.0.1
+[2025-11-06 13:21:22][INFO] ℹ️ Unhandled event type: payment_intent.created | IP: 127.0.0.1
+[2025-11-06 13:21:22][INFO] ✅ Webhook processed successfully — Event: payment_intent.created | IP: 127.0.0.1
+[2025-11-06 13:21:22][INFO] ✅ Stripe signature verified successfully | IP: 127.0.0.1
+[2025-11-06 13:21:22][INFO] 🔔 Stripe Event Received: checkout.session.completed | IP: 127.0.0.1
+[2025-11-06 13:21:22][INFO] ✅ Order Ref 8B00894FF9D7 marked PAID — txn: pi_3SQNyVQTRirNEOsn10nLgmSx, amount: 3047.98, email: alfalf@gmail.com | IP: 127.0.0.1
+[2025-11-06 13:21:22][INFO] ✅ Webhook processed successfully — Event: checkout.session.completed | IP: 127.0.0.1
+[2025-11-06 13:23:05][INFO] 🛒 Checkout started — Total: 1974.21 USD | IP: 127.0.0.1
+[2025-11-06 13:23:05][INFO] 🧾 Order 41 created (Ref: D349E79906F8, Payment: stripe) | IP: 127.0.0.1
+[2025-11-06 13:23:05][INFO] 🌐 Using base URL: https://overfearfully-prius-ulises.ngrok-free.dev/public | IP: 127.0.0.1
+[2025-11-06 13:23:05][INFO] 💳 Creating Stripe session for Order #41 | IP: 127.0.0.1
+[2025-11-06 13:23:06][INFO] ✅ Redirecting to Stripe checkout: https://checkout.stripe.com/c/pay/cs_test_a1QO2wXERNLnBDXFU1PIVIvkEqfZQhiSca6TEjQ533SlhL85jycCIFX9kG#fidnandhYHdWcXxpYCc%2FJ2FgY2RwaXEnKSdkdWxOYHwnPyd1blpxYHZxWjA0VlQ3VmtUUVdsd0tASnZrTVdBVlBTfDN9TFVPf01SdW1wdWhxMGhkQjBTdmBqMEFCbVdcNF1ycW9IaF9XcW09UEBCPWtKSGJ1TElgak5WXF1sbzdpdEJ8NTU9f3x1czFfdycpJ2N3amhWYHdzYHcnP3F3cGApJ2dkZm5id2pwa2FGamlqdyc%2FJyZjY2NjY2MnKSdpZHxqcHFRfHVgJz8ndmxrYmlgWmxxYGgnKSdga2RnaWBVaWRmYG1qaWFgd3YnP3F3cGB4JSUl | IP: 127.0.0.1
+[2025-11-06 13:23:43][INFO] 🛒 Checkout started — Total: 24.58 USD | IP: 127.0.0.1
+[2025-11-06 13:23:43][INFO] 🧾 Order 42 created (Ref: 54D2BF74735E, Payment: stripe) | IP: 127.0.0.1
+[2025-11-06 13:23:43][INFO] 🌐 Using base URL: http://chandusoft.test | IP: 127.0.0.1
+[2025-11-06 13:23:43][INFO] 💳 Creating Stripe session for Order #42 | IP: 127.0.0.1
+[2025-11-06 13:23:44][INFO] ✅ Redirecting to Stripe checkout: https://checkout.stripe.com/c/pay/cs_test_a1ebVaNeXuqBaqjIRFKU4ocMG2yjHAPmaIxvECyn15BP8Vztx00Qf26D7q#fidnandhYHdWcXxpYCc%2FJ2FgY2RwaXEnKSdkdWxOYHwnPyd1blpxYHZxWjA0VlQ3VmtUUVdsd0tASnZrTVdBVlBTfDN9TFVPf01SdW1wdWhxMGhkQjBTdmBqMEFCbVdcNF1ycW9IaF9XcW09UEBCPWtKSGJ1TElgak5WXF1sbzdpdEJ8NTU9f3x1czFfdycpJ2N3amhWYHdzYHcnP3F3cGApJ2dkZm5id2pwa2FGamlqdyc%2FJyZjY2NjY2MnKSdpZHxqcHFRfHVgJz8ndmxrYmlgWmxxYGgnKSdga2RnaWBVaWRmYG1qaWFgd3YnP3F3cGB4JSUl | IP: 127.0.0.1
+[2025-11-06 13:24:23][INFO] 🛒 Checkout started — Total: 24.58 USD | IP: 127.0.0.1
+[2025-11-06 13:24:23][INFO] 🧾 Order 43 created (Ref: 6138CD0CA681, Payment: stripe) | IP: 127.0.0.1
+[2025-11-06 13:24:23][INFO] 🌐 Using base URL: https://overfearfully-prius-ulises.ngrok-free.dev/public | IP: 127.0.0.1
+[2025-11-06 13:24:23][INFO] 💳 Creating Stripe session for Order #43 | IP: 127.0.0.1
+[2025-11-06 13:24:24][INFO] ✅ Redirecting to Stripe checkout: https://checkout.stripe.com/c/pay/cs_test_a1pTFs4Ar9cmz07FGlIX99MUXkM6Qiz6Gyjv2rvnEzewBuRTVDIExcwPec#fidnandhYHdWcXxpYCc%2FJ2FgY2RwaXEnKSdkdWxOYHwnPyd1blpxYHZxWjA0VlQ3VmtUUVdsd0tASnZrTVdBVlBTfDN9TFVPf01SdW1wdWhxMGhkQjBTdmBqMEFCbVdcNF1ycW9IaF9XcW09UEBCPWtKSGJ1TElgak5WXF1sbzdpdEJ8NTU9f3x1czFfdycpJ2N3amhWYHdzYHcnP3F3cGApJ2dkZm5id2pwa2FGamlqdyc%2FJyZjY2NjY2MnKSdpZHxqcHFRfHVgJz8ndmxrYmlgWmxxYGgnKSdga2RnaWBVaWRmYG1qaWFgd3YnP3F3cGB4JSUl | IP: 127.0.0.1
+[2025-11-06 13:24:31][INFO] ✅ Stripe webhook initialized | IP: 127.0.0.1 | IP: 127.0.0.1
+[2025-11-06 13:24:31][INFO] 🌐 Webhook triggered from host: http://overfearfully-prius-ulises.ngrok-free.dev | IP: 127.0.0.1
+[2025-11-06 13:24:31][INFO] ✅ Stripe webhook initialized | IP: 127.0.0.1 | IP: 127.0.0.1
+[2025-11-06 13:24:31][INFO] 🌐 Webhook triggered from host: http://overfearfully-prius-ulises.ngrok-free.dev | IP: 127.0.0.1
+[2025-11-06 13:24:31][INFO] ✅ Stripe webhook initialized | IP: 127.0.0.1 | IP: 127.0.0.1
+[2025-11-06 13:24:31][INFO] 🌐 Webhook triggered from host: http://overfearfully-prius-ulises.ngrok-free.dev | IP: 127.0.0.1
+[2025-11-06 13:24:31][INFO] ✅ Stripe signature verified successfully | IP: 127.0.0.1
+[2025-11-06 13:24:31][INFO] 🔔 Stripe Event Received: payment_intent.succeeded | IP: 127.0.0.1
+[2025-11-06 13:24:31][INFO] ℹ️ Unhandled event type: payment_intent.succeeded | IP: 127.0.0.1
+[2025-11-06 13:24:31][INFO] ✅ Webhook processed successfully — Event: payment_intent.succeeded | IP: 127.0.0.1
+[2025-11-06 13:24:31][INFO] ✅ Stripe signature verified successfully | IP: 127.0.0.1
+[2025-11-06 13:24:31][INFO] 🔔 Stripe Event Received: checkout.session.completed | IP: 127.0.0.1
+[2025-11-06 13:24:31][INFO] ✅ Order Ref 6138CD0CA681 marked PAID — txn: pi_3SQO1ZQTRirNEOsn1NxThgfg, amount: 24.58, email: alfalf@gmail.com | IP: 127.0.0.1
+[2025-11-06 13:24:31][INFO] ✅ Webhook processed successfully — Event: checkout.session.completed | IP: 127.0.0.1
+[2025-11-06 13:24:31][INFO] ✅ Stripe signature verified successfully | IP: 127.0.0.1
+[2025-11-06 13:24:31][INFO] 🔔 Stripe Event Received: payment_intent.created | IP: 127.0.0.1
+[2025-11-06 13:24:31][INFO] ℹ️ Unhandled event type: payment_intent.created | IP: 127.0.0.1
+[2025-11-06 13:24:31][INFO] ✅ Webhook processed successfully — Event: payment_intent.created | IP: 127.0.0.1
+[2025-11-06 13:27:50][INFO] 🛒 Checkout started — Total: 1523.99 USD | IP: 127.0.0.1
+[2025-11-06 13:27:50][INFO] 🧾 Order 44 created (Ref: 9D62E326CB0F, Payment: stripe) | IP: 127.0.0.1
+[2025-11-06 13:27:50][INFO] 🌐 Using base URL: http://chandusoft.test | IP: 127.0.0.1
+[2025-11-06 13:27:50][INFO] 💳 Creating Stripe session for Order #44 | IP: 127.0.0.1
+[2025-11-06 13:27:52][INFO] ✅ Redirecting to Stripe checkout: https://checkout.stripe.com/c/pay/cs_test_a17Em04JGa856zTxXX4LGUzXLUzDAR92nEnyC9UGRelTN8tWraBAjUE2Y0#fidnandhYHdWcXxpYCc%2FJ2FgY2RwaXEnKSdkdWxOYHwnPyd1blpxYHZxWjA0VlQ3VmtUUVdsd0tASnZrTVdBVlBTfDN9TFVPf01SdW1wdWhxMGhkQjBTdmBqMEFCbVdcNF1ycW9IaF9XcW09UEBCPWtKSGJ1TElgak5WXF1sbzdpdEJ8NTU9f3x1czFfdycpJ2N3amhWYHdzYHcnP3F3cGApJ2dkZm5id2pwa2FGamlqdyc%2FJyZjY2NjY2MnKSdpZHxqcHFRfHVgJz8ndmxrYmlgWmxxYGgnKSdga2RnaWBVaWRmYG1qaWFgd3YnP3F3cGB4JSUl | IP: 127.0.0.1
+[2025-11-06 13:33:51][INFO] ✅Successful login by admin (admin@gmail.com) - Role: Admin | IP: 127.0.0.1
+[2025-11-06 14:36:34][INFO] 🛒 Checkout started — Total: 24.58 USD | IP: 127.0.0.1
+[2025-11-06 14:36:34][INFO] 🧾 Order 45 created (Ref: 3CCAD1461B95, Payment: stripe) | IP: 127.0.0.1
+[2025-11-06 14:36:34][INFO] 🌐 Using base URL: http://chandusoft.test | IP: 127.0.0.1
+[2025-11-06 14:36:34][INFO] 💳 Creating Stripe session for Order #45 | IP: 127.0.0.1
+[2025-11-06 14:36:35][INFO] ✅ Redirecting to Stripe checkout: https://checkout.stripe.com/c/pay/cs_test_a18nqLPfP9H4lJX0cmmpsTWprkRqmkd3ISTBXxrLVIjYyaLNaurXxNjv9v#fidnandhYHdWcXxpYCc%2FJ2FgY2RwaXEnKSdkdWxOYHwnPyd1blpxYHZxWjA0VlQ3VmtUUVdsd0tASnZrTVdBVlBTfDN9TFVPf01SdW1wdWhxMGhkQjBTdmBqMEFCbVdcNF1ycW9IaF9XcW09UEBCPWtKSGJ1TElgak5WXF1sbzdpdEJ8NTU9f3x1czFfdycpJ2N3amhWYHdzYHcnP3F3cGApJ2dkZm5id2pwa2FGamlqdyc%2FJyZjY2NjY2MnKSdpZHxqcHFRfHVgJz8ndmxrYmlgWmxxYGgnKSdga2RnaWBVaWRmYG1qaWFgd3YnP3F3cGB4JSUl | IP: 127.0.0.1
+[2025-11-06 14:46:46][INFO] ✅Successful login by admin (admin@gmail.com) - Role: Admin | IP: 127.0.0.1
+[2025-11-06 16:48:58][INFO] ✅ Stripe webhook initialized | IP: 127.0.0.1 | IP: 127.0.0.1
+[2025-11-06 16:48:58][INFO] 🌐 Webhook triggered from host: http://overfearfully-prius-ulises.ngrok-free.dev | IP: 127.0.0.1
+[2025-11-06 16:48:58][INFO] ⚠️ Empty webhook payload received | Method: GET | IP: 127.0.0.1 | IP: 127.0.0.1
+[2025-11-06 16:49:05][INFO] ✅ Stripe webhook initialized | IP: 127.0.0.1 | IP: 127.0.0.1
+[2025-11-06 16:49:05][INFO] 🌐 Webhook triggered from host: http://overfearfully-prius-ulises.ngrok-free.dev | IP: 127.0.0.1
+[2025-11-06 16:49:05][INFO] ⚠️ Empty webhook payload received | Method: GET | IP: 127.0.0.1 | IP: 127.0.0.1
+[2025-11-06 16:52:01][INFO] ✅ Stripe webhook initialized | IP: 127.0.0.1 | IP: 127.0.0.1
+[2025-11-06 16:52:01][INFO] 🌐 Webhook triggered from host: http://overfearfully-prius-ulises.ngrok-free.dev | IP: 127.0.0.1
+[2025-11-06 16:52:01][INFO] ⚠️ Empty webhook payload received | Method: GET | IP: 127.0.0.1 | IP: 127.0.0.1
+[2025-11-07 09:17:31][INFO] 🛒 Checkout started — Total: 1523.99 USD | IP: ::1
+[2025-11-07 09:17:42][INFO] 🛒 Checkout started — Total: 1523.99 USD | IP: ::1
+[2025-11-07 09:17:45][INFO] 🛒 Checkout started — Total: 1523.99 USD | IP: ::1
+[2025-11-07 09:17:48][INFO] 🛒 Checkout started — Total: 1523.99 USD | IP: ::1
+[2025-11-07 10:27:00][INFO] 🛒 Checkout started — Total: 1523.99 USD | IP: ::1
+[2025-11-07 10:27:00][INFO] 🧾 Order 46 created (Ref: F15CD0C03989, Payment: stripe) | IP: ::1
+[2025-11-07 10:27:00][INFO] 🌐 Using base URL: https://overfearfully-prius-ulises.ngrok-free.dev/public | IP: ::1
+[2025-11-07 10:27:00][INFO] 💳 Creating Stripe session for Order #46 | IP: ::1
+[2025-11-07 10:27:07][INFO] ✅ Redirecting to Stripe checkout: https://checkout.stripe.com/c/pay/cs_test_a1dyc3ZPSkgm7AZUT8tmzqWtUks66IUfOWpojQiuFDgNLQhDTgHj2h6lwh#fidnandhYHdWcXxpYCc%2FJ2FgY2RwaXEnKSdkdWxOYHwnPyd1blpxYHZxWjA0VlQ3VmtUUVdsd0tASnZrTVdBVlBTfDN9TFVPf01SdW1wdWhxMGhkQjBTdmBqMEFCbVdcNF1ycW9IaF9XcW09UEBCPWtKSGJ1TElgak5WXF1sbzdpdEJ8NTU9f3x1czFfdycpJ2N3amhWYHdzYHcnP3F3cGApJ2dkZm5id2pwa2FGamlqdyc%2FJyZjY2NjY2MnKSdpZHxqcHFRfHVgJz8ndmxrYmlgWmxxYGgnKSdga2RnaWBVaWRmYG1qaWFgd3YnP3F3cGB4JSUl | IP: ::1
+[2025-11-07 10:36:05][INFO] 🛒 Checkout started — Total: 1523.99 USD | IP: ::1
+[2025-11-07 10:36:05][INFO] 🧾 Order 47 created (Ref: 95FCDC69EDDE, Payment: stripe) | IP: ::1
+[2025-11-07 10:36:05][INFO] 🌐 Using base URL: https://overfearfully-prius-ulises.ngrok-free.dev/public | IP: ::1
+[2025-11-07 10:36:05][INFO] 💳 Creating Stripe session for Order #47 | IP: ::1
+[2025-11-07 10:36:09][INFO] ✅ Redirecting to Stripe checkout: https://checkout.stripe.com/c/pay/cs_test_a1hDchi33HE6C7FVuLQ9fqrPWFCs01ZRHa7m8GgrtnrUKle2naO0hXVmBf#fidnandhYHdWcXxpYCc%2FJ2FgY2RwaXEnKSdkdWxOYHwnPyd1blpxYHZxWjA0VlQ3VmtUUVdsd0tASnZrTVdBVlBTfDN9TFVPf01SdW1wdWhxMGhkQjBTdmBqMEFCbVdcNF1ycW9IaF9XcW09UEBCPWtKSGJ1TElgak5WXF1sbzdpdEJ8NTU9f3x1czFfdycpJ2N3amhWYHdzYHcnP3F3cGApJ2dkZm5id2pwa2FGamlqdyc%2FJyZjY2NjY2MnKSdpZHxqcHFRfHVgJz8ndmxrYmlgWmxxYGgnKSdga2RnaWBVaWRmYG1qaWFgd3YnP3F3cGB4JSUl | IP: ::1
+[2025-11-07 10:36:28][INFO] ✅ Stripe webhook initialized | IP: ::1 | IP: ::1
+[2025-11-07 10:36:28][INFO] 🌐 Webhook triggered from host: http://overfearfully-prius-ulises.ngrok-free.dev | IP: ::1
+[2025-11-07 10:36:28][INFO] ✅ Stripe webhook initialized | IP: ::1 | IP: ::1
+[2025-11-07 10:36:28][INFO] 🌐 Webhook triggered from host: http://overfearfully-prius-ulises.ngrok-free.dev | IP: ::1
+[2025-11-07 10:36:29][INFO] ✅ Stripe signature verified successfully | IP: ::1
+[2025-11-07 10:36:29][INFO] 🔔 Stripe Event Received: payment_intent.created | IP: ::1
+[2025-11-07 10:36:29][INFO] ℹ️ Unhandled event type: payment_intent.created | IP: ::1
+[2025-11-07 10:36:29][INFO] ✅ Webhook processed successfully — Event: payment_intent.created | IP: ::1
+[2025-11-07 10:36:29][INFO] ✅ Stripe signature verified successfully | IP: ::1
+[2025-11-07 10:36:29][INFO] 🔔 Stripe Event Received: payment_intent.payment_failed | IP: ::1
+[2025-11-07 10:36:29][INFO] ⚠️ Missing order_ref/order_id in failed payment webhook | IP: ::1
+[2025-11-07 10:36:29][INFO] ✅ Webhook processed successfully — Event: payment_intent.payment_failed | IP: ::1
+[2025-11-07 10:40:32][INFO] ✅ Stripe webhook initialized | IP: ::1 | IP: ::1
+[2025-11-07 10:40:32][INFO] 🌐 Webhook triggered from host: http://overfearfully-prius-ulises.ngrok-free.dev | IP: ::1
+[2025-11-07 10:40:32][INFO] ✅ Stripe signature verified successfully | IP: ::1
+[2025-11-07 10:40:32][INFO] 🔔 Stripe Event Received: payment_intent.payment_failed | IP: ::1
+[2025-11-07 10:40:32][INFO] ⚠️ Missing order_ref/order_id in failed payment webhook | IP: ::1
+[2025-11-07 10:40:32][INFO] ✅ Webhook processed successfully — Event: payment_intent.payment_failed | IP: ::1
+[2025-11-07 11:45:39][INFO] 🛒 Checkout started — Total: 1523.99 USD | IP: 127.0.0.1
+[2025-11-07 11:45:39][INFO] 🧾 Order 48 created (Ref: EC612112A235, Payment: stripe) | IP: 127.0.0.1
+[2025-11-07 11:45:39][INFO] 🌐 Using base URL: http://chandusoft.test | IP: 127.0.0.1
+[2025-11-07 11:45:39][INFO] 💳 Creating Stripe session for Order #48 | IP: 127.0.0.1
+[2025-11-07 11:45:46][INFO] ✅ Redirecting to Stripe checkout: https://checkout.stripe.com/c/pay/cs_test_a1aijYpCwV3PBZ2hH5cwjGf4PbNzrVVSqv0n33em2mSMrbzBWHG3aAlaef#fidnandhYHdWcXxpYCc%2FJ2FgY2RwaXEnKSdkdWxOYHwnPyd1blpxYHZxWjA0VlQ3VmtUUVdsd0tASnZrTVdBVlBTfDN9TFVPf01SdW1wdWhxMGhkQjBTdmBqMEFCbVdcNF1ycW9IaF9XcW09UEBCPWtKSGJ1TElgak5WXF1sbzdpdEJ8NTU9f3x1czFfdycpJ2N3amhWYHdzYHcnP3F3cGApJ2dkZm5id2pwa2FGamlqdyc%2FJyZjY2NjY2MnKSdpZHxqcHFRfHVgJz8ndmxrYmlgWmxxYGgnKSdga2RnaWBVaWRmYG1qaWFgd3YnP3F3cGB4JSUl | IP: 127.0.0.1
+[2025-11-07 11:45:59][INFO] ✅ Stripe webhook initialized | IP: ::1 | IP: ::1
+[2025-11-07 11:45:59][INFO] 🌐 Webhook triggered from host: http://overfearfully-prius-ulises.ngrok-free.dev | IP: ::1
+[2025-11-07 11:45:59][INFO] ✅ Stripe webhook initialized | IP: ::1 | IP: ::1
+[2025-11-07 11:45:59][INFO] 🌐 Webhook triggered from host: http://overfearfully-prius-ulises.ngrok-free.dev | IP: ::1
+[2025-11-07 11:45:59][INFO] ✅ Stripe webhook initialized | IP: ::1 | IP: ::1
+[2025-11-07 11:45:59][INFO] 🌐 Webhook triggered from host: http://overfearfully-prius-ulises.ngrok-free.dev | IP: ::1
+[2025-11-07 11:46:00][INFO] ✅ Stripe signature verified successfully | IP: ::1
+[2025-11-07 11:46:00][INFO] 🔔 Stripe Event Received: payment_intent.succeeded | IP: ::1
+[2025-11-07 11:46:00][INFO] ℹ️ Unhandled event type: payment_intent.succeeded | IP: ::1
+[2025-11-07 11:46:00][INFO] ✅ Webhook processed successfully — Event: payment_intent.succeeded | IP: ::1
+[2025-11-07 11:46:00][INFO] ✅ Stripe signature verified successfully | IP: ::1
+[2025-11-07 11:46:00][INFO] 🔔 Stripe Event Received: payment_intent.created | IP: ::1
+[2025-11-07 11:46:00][INFO] ℹ️ Unhandled event type: payment_intent.created | IP: ::1
+[2025-11-07 11:46:00][INFO] ✅ Webhook processed successfully — Event: payment_intent.created | IP: ::1
+[2025-11-07 11:46:00][INFO] ✅ Stripe signature verified successfully | IP: ::1
+[2025-11-07 11:46:00][INFO] 🔔 Stripe Event Received: checkout.session.completed | IP: ::1
+[2025-11-07 11:46:00][INFO] ✅ Order Ref EC612112A235 marked PAID — txn: pi_3SQixmQTRirNEOsn0iqp9pz7, amount: 1523.99, email: alfalf@gmail.com | IP: ::1
+[2025-11-07 11:46:00][INFO] ✅ Webhook processed successfully — Event: checkout.session.completed | IP: ::1
+[2025-11-07 12:01:27][WARNING] Failed login attempt for admin@gmail.com | IP: 127.0.0.1
+[2025-11-07 12:01:32][INFO] ✅Successful login by admin (admin@gmail.com) - Role: Admin | IP: 127.0.0.1
+[2025-11-07 12:10:51][INFO] 🛒 Checkout started — Total: 1523.99 USD | IP: ::1
+[2025-11-07 12:10:51][INFO] 🧾 Order 49 created (Ref: 2F7F79FF0AC4, Payment: stripe) | IP: ::1
+[2025-11-07 12:10:51][INFO] 🌐 Using base URL: https://overfearfully-prius-ulises.ngrok-free.dev/public | IP: ::1
+[2025-11-07 12:10:51][INFO] 💳 Creating Stripe session for Order #49 | IP: ::1
+[2025-11-07 12:10:52][INFO] ✅ Redirecting to Stripe checkout: https://checkout.stripe.com/c/pay/cs_test_a11W3mPK7AICPJrfhTqFo9C0tmd4naZDFoq90B1mH5GH05c41L6WLpAt0Y#fidnandhYHdWcXxpYCc%2FJ2FgY2RwaXEnKSdkdWxOYHwnPyd1blpxYHZxWjA0VlQ3VmtUUVdsd0tASnZrTVdBVlBTfDN9TFVPf01SdW1wdWhxMGhkQjBTdmBqMEFCbVdcNF1ycW9IaF9XcW09UEBCPWtKSGJ1TElgak5WXF1sbzdpdEJ8NTU9f3x1czFfdycpJ2N3amhWYHdzYHcnP3F3cGApJ2dkZm5id2pwa2FGamlqdyc%2FJyZjY2NjY2MnKSdpZHxqcHFRfHVgJz8ndmxrYmlgWmxxYGgnKSdga2RnaWBVaWRmYG1qaWFgd3YnP3F3cGB4JSUl | IP: ::1
+[2025-11-07 12:20:41][INFO] 🛒 Checkout started — Total: 1523.99 USD | IP: ::1
+[2025-11-07 12:20:41][INFO] 🧾 Order 50 created (Ref: F12DA2E48E47, Payment: stripe) | IP: ::1
+[2025-11-07 12:20:41][INFO] 🌐 Using base URL: https://overfearfully-prius-ulises.ngrok-free.dev/public | IP: ::1
+[2025-11-07 12:20:41][INFO] 💳 Creating Stripe session for Order #50 | IP: ::1
+[2025-11-07 12:20:42][INFO] ✅ Redirecting to Stripe checkout: https://checkout.stripe.com/c/pay/cs_test_a1RQ4IlYPCRNMncg6Y07DQdqdS9ZUmJVId4GxZtFp0V1MWHkDVodJrO9fv#fidnandhYHdWcXxpYCc%2FJ2FgY2RwaXEnKSdkdWxOYHwnPyd1blpxYHZxWjA0VlQ3VmtUUVdsd0tASnZrTVdBVlBTfDN9TFVPf01SdW1wdWhxMGhkQjBTdmBqMEFCbVdcNF1ycW9IaF9XcW09UEBCPWtKSGJ1TElgak5WXF1sbzdpdEJ8NTU9f3x1czFfdycpJ2N3amhWYHdzYHcnP3F3cGApJ2dkZm5id2pwa2FGamlqdyc%2FJyZjY2NjY2MnKSdpZHxqcHFRfHVgJz8ndmxrYmlgWmxxYGgnKSdga2RnaWBVaWRmYG1qaWFgd3YnP3F3cGB4JSUl | IP: ::1
+[2025-11-07 12:21:28][INFO] ✅ Stripe webhook initialized | IP: ::1 | IP: ::1
+[2025-11-07 12:21:28][INFO] 🌐 Webhook triggered from host: http://overfearfully-prius-ulises.ngrok-free.dev | IP: ::1
+[2025-11-07 12:21:28][INFO] ✅ Stripe webhook initialized | IP: ::1 | IP: ::1
+[2025-11-07 12:21:28][INFO] 🌐 Webhook triggered from host: http://overfearfully-prius-ulises.ngrok-free.dev | IP: ::1
+[2025-11-07 12:21:28][INFO] ✅ Stripe webhook initialized | IP: ::1 | IP: ::1
+[2025-11-07 12:21:28][INFO] 🌐 Webhook triggered from host: http://overfearfully-prius-ulises.ngrok-free.dev | IP: ::1
+[2025-11-07 12:21:28][INFO] ✅ Stripe signature verified successfully | IP: ::1
+[2025-11-07 12:21:28][INFO] 🔔 Stripe Event Received: payment_intent.succeeded | IP: ::1
+[2025-11-07 12:21:28][INFO] ℹ️ Unhandled event type: payment_intent.succeeded | IP: ::1
+[2025-11-07 12:21:28][INFO] ✅ Webhook processed successfully — Event: payment_intent.succeeded | IP: ::1
+[2025-11-07 12:21:28][INFO] ✅ Stripe signature verified successfully | IP: ::1
+[2025-11-07 12:21:28][INFO] 🔔 Stripe Event Received: checkout.session.completed | IP: ::1
+[2025-11-07 12:21:28][INFO] ✅ Order Ref F12DA2E48E47 marked PAID — txn: pi_3SQjW7QTRirNEOsn0Thmar6H, amount: 1523.99, email: alfalf@gmail.com | IP: ::1
+[2025-11-07 12:21:28][INFO] ✅ Webhook processed successfully — Event: checkout.session.completed | IP: ::1
+[2025-11-07 12:21:28][INFO] ✅ Stripe signature verified successfully | IP: ::1
+[2025-11-07 12:21:28][INFO] 🔔 Stripe Event Received: payment_intent.created | IP: ::1
+[2025-11-07 12:21:28][INFO] ℹ️ Unhandled event type: payment_intent.created | IP: ::1
+[2025-11-07 12:21:28][INFO] ✅ Webhook processed successfully — Event: payment_intent.created | IP: ::1
+[2025-11-07 13:23:06][INFO] ✅ Stripe webhook initialized | IP: ::1 | IP: ::1
+[2025-11-07 13:23:06][INFO] 🌐 Webhook triggered from host: http://overfearfully-prius-ulises.ngrok-free.dev | IP: ::1
+[2025-11-07 13:23:06][INFO] ✅ Stripe signature verified successfully | IP: ::1
+[2025-11-07 13:23:06][INFO] 🔔 Stripe Event Received: checkout.session.expired | IP: ::1
+[2025-11-07 13:23:06][INFO] ℹ️ Unhandled event type: checkout.session.expired | IP: ::1
+[2025-11-07 13:23:06][INFO] ✅ Webhook processed successfully — Event: checkout.session.expired | IP: ::1
+[2025-11-07 13:23:43][INFO] ✅ Stripe webhook initialized | IP: ::1 | IP: ::1
+[2025-11-07 13:23:43][INFO] 🌐 Webhook triggered from host: http://overfearfully-prius-ulises.ngrok-free.dev | IP: ::1
+[2025-11-07 13:23:43][INFO] ✅ Stripe signature verified successfully | IP: ::1
+[2025-11-07 13:23:43][INFO] 🔔 Stripe Event Received: checkout.session.expired | IP: ::1
+[2025-11-07 13:23:43][INFO] ℹ️ Unhandled event type: checkout.session.expired | IP: ::1
+[2025-11-07 13:23:43][INFO] ✅ Webhook processed successfully — Event: checkout.session.expired | IP: ::1
+[2025-11-07 13:27:51][INFO] ✅ Stripe webhook initialized | IP: ::1 | IP: ::1
+[2025-11-07 13:27:51][INFO] 🌐 Webhook triggered from host: http://overfearfully-prius-ulises.ngrok-free.dev | IP: ::1
+[2025-11-07 13:27:51][INFO] ✅ Stripe signature verified successfully | IP: ::1
+[2025-11-07 13:27:51][INFO] 🔔 Stripe Event Received: checkout.session.expired | IP: ::1
+[2025-11-07 13:27:51][INFO] ℹ️ Unhandled event type: checkout.session.expired | IP: ::1
+[2025-11-07 13:27:51][INFO] ✅ Webhook processed successfully — Event: checkout.session.expired | IP: ::1
+[2025-11-07 14:36:34][INFO] ✅ Stripe webhook initialized | IP: ::1 | IP: ::1
+[2025-11-07 14:36:34][INFO] 🌐 Webhook triggered from host: http://overfearfully-prius-ulises.ngrok-free.dev | IP: ::1
+[2025-11-07 14:36:34][INFO] ✅ Stripe signature verified successfully | IP: ::1
+[2025-11-07 14:36:34][INFO] 🔔 Stripe Event Received: checkout.session.expired | IP: ::1
+[2025-11-07 14:36:34][INFO] ℹ️ Unhandled event type: checkout.session.expired | IP: ::1
+[2025-11-07 14:36:34][INFO] ✅ Webhook processed successfully — Event: checkout.session.expired | IP: ::1
+[2025-11-07 14:43:04][WARNING] Failed login attempt for admin@gmail.com | IP: 127.0.0.1
+[2025-11-07 14:43:26][INFO] ✅Successful login by admin (admin@gmail.com) - Role: Admin | IP: 127.0.0.1
+[2025-11-07 15:53:43][WARNING] ⚠️ CSRF validation failed on /public/place-order | IP: 127.0.0.1 | IP: 127.0.0.1
+[2025-11-07 15:57:22][WARNING] ⚠️ CSRF validation failed on /public/place-order | IP: 127.0.0.1 | IP: 127.0.0.1
+[2025-11-07 16:37:39][INFO] ✅ Stripe webhook initialized | IP: 127.0.0.1 | IP: 127.0.0.1
+[2025-11-07 16:37:39][INFO] 🌐 Webhook triggered from host: http://chandusoft.test | IP: 127.0.0.1
+[2025-11-07 16:37:39][INFO] ⚠️ Empty webhook payload received | Method: GET | IP: 127.0.0.1
+[2025-11-07 16:37:40][INFO] ✅ Stripe webhook initialized | IP: 127.0.0.1 | IP: 127.0.0.1
+[2025-11-07 16:37:40][INFO] 🌐 Webhook triggered from host: http://chandusoft.test | IP: 127.0.0.1
+[2025-11-07 16:37:40][INFO] ⚠️ Empty webhook payload received | Method: GET | IP: 127.0.0.1
+[2025-11-07 16:48:28][INFO] ✅ Stripe webhook initialized | IP: ::1 | IP: ::1
+[2025-11-07 16:48:28][INFO] 🌐 Webhook triggered from host: http://overfearfully-prius-ulises.ngrok-free.dev | IP: ::1
+[2025-11-07 16:48:28][INFO] ✅ Stripe signature verified successfully | IP: ::1
+[2025-11-07 16:48:28][INFO] 🔔 Stripe Event Received: payment_intent.created | IP: ::1
+[2025-11-07 16:48:28][INFO] ℹ️ Unhandled event type: payment_intent.created | IP: ::1
+[2025-11-07 16:48:28][INFO] ✅ Webhook processed successfully — Event: payment_intent.created | IP: ::1
+[2025-11-07 16:57:41][INFO] ✅ Stripe webhook initialized | IP: ::1 | IP: ::1
+[2025-11-07 16:57:41][INFO] 🌐 Webhook triggered from host: http://overfearfully-prius-ulises.ngrok-free.dev | IP: ::1
+[2025-11-07 16:57:41][INFO] ✅ Stripe signature verified successfully | IP: ::1
+[2025-11-07 16:57:41][INFO] 🔔 Stripe Event Received: payment_intent.created | IP: ::1
+[2025-11-07 16:57:41][INFO] ℹ️ Unhandled event type: payment_intent.created | IP: ::1
+[2025-11-07 16:57:41][INFO] ✅ Webhook processed successfully — Event: payment_intent.created | IP: ::1
+[2025-11-07 17:06:53][INFO] 🛒 Checkout started — Total: 1523.99 USD | IP: ::1
+[2025-11-07 17:06:53][INFO] 🧾 Order 51 created (Ref: 39E4411943EB, Payment: stripe) | IP: ::1
+[2025-11-07 17:06:53][INFO] 🌐 Using base URL: https://overfearfully-prius-ulises.ngrok-free.dev/public | IP: ::1
+[2025-11-07 17:06:53][INFO] 💳 Creating Stripe session for Order #51 | IP: ::1
+[2025-11-07 17:06:54][INFO] ✅ Redirecting to Stripe checkout: https://checkout.stripe.com/c/pay/cs_test_a1zHGnycJPQWxa8ZNYbDfdpbQTBfdjPlSr1ygaytqHpUEt4e5FC40fXxMq#fidnandhYHdWcXxpYCc%2FJ2FgY2RwaXEnKSdkdWxOYHwnPyd1blpxYHZxWjA0VlQ3VmtUUVdsd0tASnZrTVdBVlBTfDN9TFVPf01SdW1wdWhxMGhkQjBTdmBqMEFCbVdcNF1ycW9IaF9XcW09UEBCPWtKSGJ1TElgak5WXF1sbzdpdEJ8NTU9f3x1czFfdycpJ2N3amhWYHdzYHcnP3F3cGApJ2dkZm5id2pwa2FGamlqdyc%2FJyZjY2NjY2MnKSdpZHxqcHFRfHVgJz8ndmxrYmlgWmxxYGgnKSdga2RnaWBVaWRmYG1qaWFgd3YnP3F3cGB4JSUl | IP: ::1
+[2025-11-07 17:11:57][INFO] ✅ Stripe webhook initialized | IP: ::1 | IP: ::1
+[2025-11-07 17:11:57][INFO] 🌐 Webhook triggered from host: http://overfearfully-prius-ulises.ngrok-free.dev | IP: ::1
+[2025-11-07 17:11:57][INFO] ✅ Stripe webhook initialized | IP: ::1 | IP: ::1
+[2025-11-07 17:11:57][INFO] 🌐 Webhook triggered from host: http://overfearfully-prius-ulises.ngrok-free.dev | IP: ::1
+[2025-11-07 17:11:58][INFO] ✅ Stripe signature verified successfully | IP: ::1
+[2025-11-07 17:11:58][INFO] 🔔 Stripe Event Received: payment_intent.succeeded | IP: ::1
+[2025-11-07 17:11:58][INFO] ℹ️ Unhandled event type: payment_intent.succeeded | IP: ::1
+[2025-11-07 17:11:58][INFO] ✅ Webhook processed successfully — Event: payment_intent.succeeded | IP: ::1
+[2025-11-07 17:11:58][INFO] ✅ Stripe signature verified successfully | IP: ::1
+[2025-11-07 17:11:58][INFO] 🔔 Stripe Event Received: payment_intent.created | IP: ::1
+[2025-11-07 17:11:58][INFO] ℹ️ Unhandled event type: payment_intent.created | IP: ::1
+[2025-11-07 17:11:58][INFO] ✅ Webhook processed successfully — Event: payment_intent.created | IP: ::1
+[2025-11-07 17:11:58][INFO] ✅ Stripe webhook initialized | IP: ::1 | IP: ::1
+[2025-11-07 17:11:58][INFO] 🌐 Webhook triggered from host: http://overfearfully-prius-ulises.ngrok-free.dev | IP: ::1
+[2025-11-07 17:11:58][INFO] ✅ Stripe signature verified successfully | IP: ::1
+[2025-11-07 17:11:58][INFO] 🔔 Stripe Event Received: checkout.session.completed | IP: ::1
+[2025-11-07 17:11:58][INFO] ✅ Order Ref 39E4411943EB marked PAID — txn: pi_3SQo3DQTRirNEOsn1q6Dy5kv, amount: 1523.99, email: alfalf@gmail.com | IP: ::1
+[2025-11-07 17:11:58][INFO] ✅ Webhook processed successfully — Event: checkout.session.completed | IP: ::1
+[2025-11-07 17:12:50][INFO] 🛒 Checkout started — Total: 55.95 USD | IP: ::1
+[2025-11-07 17:12:50][INFO] 🧾 Order 52 created (Ref: 62DE9F50F4F8, Payment: stripe) | IP: ::1
+[2025-11-07 17:12:50][INFO] 🌐 Using base URL: https://overfearfully-prius-ulises.ngrok-free.dev/public | IP: ::1
+[2025-11-07 17:12:50][INFO] 💳 Creating Stripe session for Order #52 | IP: ::1
+[2025-11-07 17:12:51][INFO] ✅ Redirecting to Stripe checkout: https://checkout.stripe.com/c/pay/cs_test_a1JXxFcEtM0P3sSFFdSfb9nEwTwFAkuIAwElq8XuBvoFdNDp3lNC8CHkA0#fidnandhYHdWcXxpYCc%2FJ2FgY2RwaXEnKSdkdWxOYHwnPyd1blpxYHZxWjA0VlQ3VmtUUVdsd0tASnZrTVdBVlBTfDN9TFVPf01SdW1wdWhxMGhkQjBTdmBqMEFCbVdcNF1ycW9IaF9XcW09UEBCPWtKSGJ1TElgak5WXF1sbzdpdEJ8NTU9f3x1czFfdycpJ2N3amhWYHdzYHcnP3F3cGApJ2dkZm5id2pwa2FGamlqdyc%2FJyZjY2NjY2MnKSdpZHxqcHFRfHVgJz8ndmxrYmlgWmxxYGgnKSdga2RnaWBVaWRmYG1qaWFgd3YnP3F3cGB4JSUl | IP: ::1
+[2025-11-07 17:26:18][INFO] ✅ Stripe webhook initialized | IP: ::1 | IP: ::1
+[2025-11-07 17:26:18][INFO] 🌐 Webhook triggered from host: http://overfearfully-prius-ulises.ngrok-free.dev | IP: ::1
+[2025-11-07 17:26:18][INFO] ✅ Stripe signature verified successfully | IP: ::1
+[2025-11-07 17:26:18][INFO] 🔔 Stripe Event Received: payment_intent.created | IP: ::1
+[2025-11-07 17:26:18][INFO] ℹ️ Unhandled event type: payment_intent.created | IP: ::1
+[2025-11-07 17:26:18][INFO] ✅ Webhook processed successfully — Event: payment_intent.created | IP: ::1
+[2025-11-07 17:31:01][INFO] ✅ Stripe webhook initialized | IP: ::1 | IP: ::1
+[2025-11-07 17:31:01][INFO] 🌐 Webhook triggered from host: http://overfearfully-prius-ulises.ngrok-free.dev | IP: ::1
+[2025-11-07 17:31:01][INFO] ✅ Stripe signature verified successfully | IP: ::1
+[2025-11-07 17:31:01][INFO] 🔔 Stripe Event Received: payment_intent.created | IP: ::1
+[2025-11-07 17:31:01][INFO] ℹ️ Unhandled event type: payment_intent.created | IP: ::1
+[2025-11-07 17:31:01][INFO] ✅ Webhook processed successfully — Event: payment_intent.created | IP: ::1
+[2025-11-10 13:25:37][INFO] ✅Successful login by admin (admin@gmail.com) - Role: Admin | IP: 127.0.0.1
+[2025-11-10 13:26:05][ERROR] CSRF token mismatch for: alfalf@gmail.com | IP: 127.0.0.1
+[2025-11-10 13:37:28][INFO] ✅ Stripe webhook initialized | IP: 127.0.0.1 | IP: 127.0.0.1
+[2025-11-10 13:37:28][INFO] 🌐 Webhook triggered from host: https://chandusoft.test | IP: 127.0.0.1
+[2025-11-10 13:37:28][INFO] ⚠️ Empty webhook payload received | Method: GET | IP: 127.0.0.1
+[2025-11-10 13:39:16][INFO] ✅ Stripe webhook initialized | IP: 127.0.0.1 | IP: 127.0.0.1
+[2025-11-10 13:39:16][INFO] 🌐 Webhook triggered from host: https://chandusoft.test | IP: 127.0.0.1
+[2025-11-10 13:39:16][INFO] ⚠️ Empty webhook payload received | Method: GET | IP: 127.0.0.1
+[2025-11-10 13:39:45][INFO] ✅ Stripe webhook initialized | IP: 127.0.0.1 | IP: 127.0.0.1
+[2025-11-10 13:39:45][INFO] 🌐 Webhook triggered from host: https://chandusoft.test | IP: 127.0.0.1
+[2025-11-10 13:39:45][INFO] ⚠️ Empty webhook payload received | Method: GET | IP: 127.0.0.1
+[2025-11-10 13:54:01][INFO] ✅ Stripe webhook initialized | IP: 127.0.0.1 | IP: 127.0.0.1
+[2025-11-10 13:54:01][INFO] 🌐 Webhook triggered from host: https://chandusoft.test | IP: 127.0.0.1
+[2025-11-10 13:54:01][INFO] ⚠️ Empty webhook payload received | Method: GET | IP: 127.0.0.1
+[2025-11-10 14:44:58][WARNING] Failed login attempt for admin@gmail.com | IP: 127.0.0.1
+[2025-11-10 14:45:04][INFO] ✅Successful login by admin (admin@gmail.com) - Role: Admin | IP: 127.0.0.1
+[2025-11-10 14:45:14][INFO] ✅Successful login by admin (admin@gmail.com) - Role: Admin | IP: 127.0.0.1
+[2025-11-10 14:58:45][INFO] 🛒 Checkout started — Total: 5991.25 USD | IP: 127.0.0.1
+[2025-11-10 14:58:45][INFO] 🧾 Order 53 created (Ref: 2039B62AC598, Payment: stripe) | IP: 127.0.0.1
+[2025-11-10 14:58:45][INFO] 🌐 Using base URL: https://chandusoft.test | IP: 127.0.0.1
+[2025-11-10 14:58:45][INFO] 💳 Creating Stripe session for Order #53 | IP: 127.0.0.1
+[2025-11-10 14:58:53][INFO] ✅ Redirecting to Stripe checkout: https://checkout.stripe.com/c/pay/cs_test_a17oYZpuQmXX2zvBxJYE6hCNEc4VEz7sTmkvTKckhsSdGFVD7lHYWhA29J#fidnandhYHdWcXxpYCc%2FJ2FgY2RwaXEnKSdkdWxOYHwnPyd1blpxYHZxWjA0VlQ3VmtUUVdsd0tASnZrTVdBVlBTfDN9TFVPf01SdW1wdWhxMGhkQjBTdmBqMEFCbVdcNF1ycW9IaF9XcW09UEBCPWtKSGJ1TElgak5WXF1sbzdpdEJ8NTU9f3x1czFfdycpJ2N3amhWYHdzYHcnP3F3cGApJ2dkZm5id2pwa2FGamlqdyc%2FJyZjY2NjY2MnKSdpZHxqcHFRfHVgJz8ndmxrYmlgWmxxYGgnKSdga2RnaWBVaWRmYG1qaWFgd3YnP3F3cGB4JSUl | IP: 127.0.0.1
+[2025-11-10 15:14:30][INFO] ✅Successful login by admin (admin@gmail.com) - Role: Admin | IP: 127.0.0.1
+[2025-11-10 15:16:03][INFO] ✅ Stripe webhook initialized | IP: 127.0.0.1 | IP: 127.0.0.1
+[2025-11-10 15:16:03][INFO] 🌐 Webhook triggered from host: https://chandusoft.test | IP: 127.0.0.1
+[2025-11-10 15:16:03][INFO] ⚠️ Empty webhook payload received | Method: GET | IP: 127.0.0.1
+[2025-11-10 15:16:13][INFO] ✅ Stripe webhook initialized | IP: 127.0.0.1 | IP: 127.0.0.1
+[2025-11-10 15:16:13][INFO] 🌐 Webhook triggered from host: https://chandusoft.test | IP: 127.0.0.1
+[2025-11-10 15:16:13][INFO] ⚠️ Empty webhook payload received | Method: GET | IP: 127.0.0.1
+[2025-11-10 15:16:15][INFO] ✅ Stripe webhook initialized | IP: 127.0.0.1 | IP: 127.0.0.1
+[2025-11-10 15:16:15][INFO] 🌐 Webhook triggered from host: https://chandusoft.test | IP: 127.0.0.1
+[2025-11-10 15:16:15][INFO] ⚠️ Empty webhook payload received | Method: GET | IP: 127.0.0.1
+[2025-11-10 15:16:20][INFO] ✅ Stripe webhook initialized | IP: 127.0.0.1 | IP: 127.0.0.1
+[2025-11-10 15:16:20][INFO] 🌐 Webhook triggered from host: https://chandusoft.test | IP: 127.0.0.1
+[2025-11-10 15:16:20][INFO] ⚠️ Empty webhook payload received | Method: GET | IP: 127.0.0.1
+[2025-11-10 15:16:22][INFO] ✅ Stripe webhook initialized | IP: 127.0.0.1 | IP: 127.0.0.1
+[2025-11-10 15:16:22][INFO] 🌐 Webhook triggered from host: https://chandusoft.test | IP: 127.0.0.1
+[2025-11-10 15:16:22][INFO] ⚠️ Empty webhook payload received | Method: GET | IP: 127.0.0.1
+[2025-11-10 15:16:22][INFO] ✅ Stripe webhook initialized | IP: 127.0.0.1 | IP: 127.0.0.1
+[2025-11-10 15:16:22][INFO] 🌐 Webhook triggered from host: https://chandusoft.test | IP: 127.0.0.1
+[2025-11-10 15:16:22][INFO] ⚠️ Empty webhook payload received | Method: GET | IP: 127.0.0.1
+[2025-11-10 15:16:22][INFO] ✅ Stripe webhook initialized | IP: 127.0.0.1 | IP: 127.0.0.1
+[2025-11-10 15:16:22][INFO] 🌐 Webhook triggered from host: https://chandusoft.test | IP: 127.0.0.1
+[2025-11-10 15:16:22][INFO] ⚠️ Empty webhook payload received | Method: GET | IP: 127.0.0.1
+[2025-11-10 15:23:32][INFO] ✅ Stripe webhook initialized | IP: 127.0.0.1 | IP: 127.0.0.1
+[2025-11-10 15:23:32][INFO] 🌐 Webhook triggered from host: https://chandusoft.test | IP: 127.0.0.1
+[2025-11-10 15:23:32][INFO] ⚠️ Empty webhook payload received | Method: GET | IP: 127.0.0.1
+[2025-11-10 15:26:32][INFO] ✅ Stripe webhook initialized | IP: 127.0.0.1 | IP: 127.0.0.1
+[2025-11-10 15:26:32][INFO] 🌐 Webhook triggered from host: https://chandusoft.test | IP: 127.0.0.1
+[2025-11-10 15:26:32][INFO] ⚠️ Empty webhook payload received | Method: GET | IP: 127.0.0.1
+[2025-11-10 15:33:54][INFO] ✅ Stripe webhook initialized | IP: 127.0.0.1 | IP: 127.0.0.1
+[2025-11-10 15:33:54][INFO] 🌐 Webhook triggered from host: https://chandusoft.test | IP: 127.0.0.1
+[2025-11-10 15:33:54][INFO] ⚠️ Empty webhook payload received | Method: GET | IP: 127.0.0.1
+[2025-11-10 15:37:12][INFO] ✅ Stripe webhook initialized | IP: 127.0.0.1 | IP: 127.0.0.1
+[2025-11-10 15:37:12][INFO] 🌐 Webhook triggered from host: https://chandusoft.test | IP: 127.0.0.1
+[2025-11-10 15:37:12][INFO] ⚠️ Empty webhook payload received | Method: GET | IP: 127.0.0.1
+[2025-11-10 15:38:52][INFO] ✅ Stripe webhook initialized | IP: 127.0.0.1 | IP: 127.0.0.1
+[2025-11-10 15:38:52][INFO] 🌐 Webhook triggered from host: https://chandusoft.test | IP: 127.0.0.1
+[2025-11-10 15:38:52][INFO] ⚠️ Empty webhook payload received | Method: GET | IP: 127.0.0.1
+[2025-11-10 15:38:59][INFO] ✅ Stripe webhook initialized | IP: 127.0.0.1 | IP: 127.0.0.1
+[2025-11-10 15:38:59][INFO] 🌐 Webhook triggered from host: https://chandusoft.test | IP: 127.0.0.1
+[2025-11-10 15:38:59][INFO] ⚠️ Empty webhook payload received | Method: GET | IP: 127.0.0.1
+[2025-11-10 15:41:14][INFO] ✅ Stripe webhook initialized | IP: 127.0.0.1 | IP: 127.0.0.1
+[2025-11-10 15:41:14][INFO] 🌐 Webhook triggered from host: https://chandusoft.test | IP: 127.0.0.1
+[2025-11-10 15:41:14][INFO] ⚠️ Empty webhook payload received | Method: GET | IP: 127.0.0.1
+[2025-11-10 15:55:02][INFO] ✅ Stripe webhook initialized | IP: 127.0.0.1 | IP: 127.0.0.1
+[2025-11-10 15:55:02][INFO] 🌐 Webhook triggered from host: https://chandusoft.test | IP: 127.0.0.1
+[2025-11-10 15:55:02][INFO] ⚠️ Empty webhook payload received | Method: GET | IP: 127.0.0.1
+[2025-11-10 16:01:14][INFO] ✅ Stripe webhook initialized | IP: 127.0.0.1 | IP: 127.0.0.1
+[2025-11-10 16:01:14][INFO] 🌐 Webhook triggered from host: https://chandusoft.test | IP: 127.0.0.1
+[2025-11-10 16:01:14][INFO] ⚠️ Empty webhook payload received | Method: GET | IP: 127.0.0.1
+[2025-11-10 16:01:19][INFO] ✅ Stripe webhook initialized | IP: 127.0.0.1 | IP: 127.0.0.1
+[2025-11-10 16:01:19][INFO] 🌐 Webhook triggered from host: https://chandusoft.test | IP: 127.0.0.1
+[2025-11-10 16:01:19][INFO] ⚠️ Empty webhook payload received | Method: GET | IP: 127.0.0.1
+[2025-11-10 16:04:09][INFO] ✅ Stripe webhook initialized | IP: 127.0.0.1 | IP: 127.0.0.1
+[2025-11-10 16:04:09][INFO] 🌐 Webhook triggered from host: https://chandusoft.test | IP: 127.0.0.1
+[2025-11-10 16:04:09][INFO] ⚠️ Empty webhook payload received | Method: GET | IP: 127.0.0.1
+[2025-11-10 16:04:19][INFO] ✅ Stripe webhook initialized | IP: 127.0.0.1 | IP: 127.0.0.1
+[2025-11-10 16:04:19][INFO] 🌐 Webhook triggered from host: https://chandusoft.test | IP: 127.0.0.1
+[2025-11-10 16:04:19][INFO] ⚠️ Empty webhook payload received | Method: GET | IP: 127.0.0.1
+[2025-11-10 16:06:48][INFO] ✅ Stripe webhook initialized | IP: 127.0.0.1 | IP: 127.0.0.1
+[2025-11-10 16:06:48][INFO] 🌐 Webhook triggered from host: https://chandusoft.test | IP: 127.0.0.1
+[2025-11-10 16:06:48][INFO] ⚠️ Empty webhook payload received | Method: GET | IP: 127.0.0.1
+[2025-11-10 16:10:06][INFO] ✅ Stripe webhook initialized | IP: 127.0.0.1 | IP: 127.0.0.1
+[2025-11-10 16:10:06][INFO] 🌐 Webhook triggered from host: https://chandusoft.test | IP: 127.0.0.1
+[2025-11-10 16:10:06][INFO] ⚠️ Empty webhook payload received | Method: GET | IP: 127.0.0.1
+[2025-11-10 16:12:00][INFO] ✅ Stripe webhook initialized | IP: 127.0.0.1 | IP: 127.0.0.1
+[2025-11-10 16:12:00][INFO] 🌐 Webhook triggered from host: https://chandusoft.test | IP: 127.0.0.1
+[2025-11-10 16:12:00][INFO] ⚠️ Empty webhook payload received | Method: GET | IP: 127.0.0.1
+[2025-11-10 16:13:33][INFO] ✅ Stripe webhook initialized | IP: ::1 | IP: ::1
+[2025-11-10 16:13:33][INFO] 🌐 Webhook triggered from host: http://overfearfully-prius-ulises.ngrok-free.dev | IP: ::1
+[2025-11-10 16:13:33][INFO] ⚠️ Empty webhook payload received | Method: GET | IP: ::1
+[2025-11-10 16:13:35][INFO] ✅ Stripe webhook initialized | IP: ::1 | IP: ::1
+[2025-11-10 16:13:35][INFO] 🌐 Webhook triggered from host: http://overfearfully-prius-ulises.ngrok-free.dev | IP: ::1
+[2025-11-10 16:13:35][INFO] ⚠️ Empty webhook payload received | Method: GET | IP: ::1
+[2025-11-10 16:13:53][INFO] ✅ Stripe webhook initialized | IP: ::1 | IP: ::1
+[2025-11-10 16:13:53][INFO] 🌐 Webhook triggered from host: http://overfearfully-prius-ulises.ngrok-free.dev | IP: ::1
+[2025-11-10 16:13:53][INFO] ⚠️ Empty webhook payload received | Method: GET | IP: ::1
+[2025-11-10 16:14:02][INFO] ✅ Stripe webhook initialized | IP: ::1 | IP: ::1
+[2025-11-10 16:14:02][INFO] 🌐 Webhook triggered from host: http://overfearfully-prius-ulises.ngrok-free.dev | IP: ::1
+[2025-11-10 16:14:09][INFO] ✅ Stripe signature verified successfully | IP: ::1
+[2025-11-10 16:14:09][INFO] 🔔 Stripe Event Received: payment_intent.payment_failed | IP: ::1
+[2025-11-10 16:14:09][INFO] ⚠️ Missing order_ref/order_id in failed payment webhook | IP: ::1
+[2025-11-10 16:14:09][INFO] ✅ Webhook processed successfully — Event: payment_intent.payment_failed | IP: ::1
+[2025-11-10 16:14:28][INFO] ✅ Stripe webhook initialized | IP: ::1 | IP: ::1
+[2025-11-10 16:14:28][INFO] 🌐 Webhook triggered from host: http://overfearfully-prius-ulises.ngrok-free.dev | IP: ::1
+[2025-11-10 16:14:28][INFO] ⚠️ Empty webhook payload received | Method: GET | IP: ::1
+[2025-11-10 16:14:56][INFO] ✅Successful login by admin (admin@gmail.com) - Role: Admin | IP: ::1
+[2025-11-10 17:07:20][INFO] ✅ Stripe webhook initialized | IP: ::1 | IP: ::1
+[2025-11-10 17:07:20][INFO] 🌐 Webhook triggered from host: http://overfearfully-prius-ulises.ngrok-free.dev | IP: ::1
+[2025-11-10 17:07:20][INFO] ⚠️ Empty webhook payload received | Method: GET | IP: ::1
+[2025-11-10 17:07:21][INFO] ✅ Stripe webhook initialized | IP: ::1 | IP: ::1
+[2025-11-10 17:07:21][INFO] 🌐 Webhook triggered from host: http://overfearfully-prius-ulises.ngrok-free.dev | IP: ::1
+[2025-11-10 17:07:21][INFO] ⚠️ Empty webhook payload received | Method: GET | IP: ::1
+[2025-11-10 17:07:21][INFO] ✅ Stripe webhook initialized | IP: ::1 | IP: ::1
+[2025-11-10 17:07:21][INFO] 🌐 Webhook triggered from host: http://overfearfully-prius-ulises.ngrok-free.dev | IP: ::1
+[2025-11-10 17:07:21][INFO] ⚠️ Empty webhook payload received | Method: GET | IP: ::1

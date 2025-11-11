@@ -3,6 +3,14 @@
 // Chandusoft Authentication with Mailpit + File Logging
 // ============================================================
 
+session_set_cookie_params([
+  'lifetime' => 0,
+  'path' => '/',
+  'secure' => isset($_SERVER['HTTPS']),
+  'httponly' => true,
+  'samesite' => 'Strict'
+]);
+
 session_start();
 
 // Load database connection
